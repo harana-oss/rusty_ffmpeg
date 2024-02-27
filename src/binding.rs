@@ -430,10 +430,11 @@ pub const SCNxMAX: &[u8; 3usize] = b"jx\0";
 pub const __API_TO_BE_DEPRECATED: u32 = 100000;
 pub const __API_TO_BE_DEPRECATED_MACOS: u32 = 100000;
 pub const __API_TO_BE_DEPRECATED_IOS: u32 = 100000;
-pub const __API_TO_BE_DEPRECATED_TVOS: u32 = 100000;
-pub const __API_TO_BE_DEPRECATED_WATCHOS: u32 = 100000;
 pub const __API_TO_BE_DEPRECATED_MACCATALYST: u32 = 100000;
+pub const __API_TO_BE_DEPRECATED_WATCHOS: u32 = 100000;
+pub const __API_TO_BE_DEPRECATED_TVOS: u32 = 100000;
 pub const __API_TO_BE_DEPRECATED_DRIVERKIT: u32 = 100000;
+pub const __API_TO_BE_DEPRECATED_VISIONOS: u32 = 100000;
 pub const __MAC_10_0: u32 = 1000;
 pub const __MAC_10_1: u32 = 1010;
 pub const __MAC_10_2: u32 = 1020;
@@ -462,6 +463,7 @@ pub const __MAC_10_13_4: u32 = 101304;
 pub const __MAC_10_14: u32 = 101400;
 pub const __MAC_10_14_1: u32 = 101401;
 pub const __MAC_10_14_4: u32 = 101404;
+pub const __MAC_10_14_5: u32 = 101405;
 pub const __MAC_10_14_6: u32 = 101406;
 pub const __MAC_10_15: u32 = 101500;
 pub const __MAC_10_15_1: u32 = 101501;
@@ -477,7 +479,20 @@ pub const __MAC_12_0: u32 = 120000;
 pub const __MAC_12_1: u32 = 120100;
 pub const __MAC_12_2: u32 = 120200;
 pub const __MAC_12_3: u32 = 120300;
+pub const __MAC_12_4: u32 = 120400;
+pub const __MAC_12_5: u32 = 120500;
+pub const __MAC_12_6: u32 = 120600;
+pub const __MAC_12_7: u32 = 120700;
 pub const __MAC_13_0: u32 = 130000;
+pub const __MAC_13_1: u32 = 130100;
+pub const __MAC_13_2: u32 = 130200;
+pub const __MAC_13_3: u32 = 130300;
+pub const __MAC_13_4: u32 = 130400;
+pub const __MAC_13_5: u32 = 130500;
+pub const __MAC_13_6: u32 = 130600;
+pub const __MAC_14_0: u32 = 140000;
+pub const __MAC_14_1: u32 = 140100;
+pub const __MAC_14_2: u32 = 140200;
 pub const __IPHONE_2_0: u32 = 20000;
 pub const __IPHONE_2_1: u32 = 20100;
 pub const __IPHONE_2_2: u32 = 20200;
@@ -530,6 +545,7 @@ pub const __IPHONE_14_1: u32 = 140100;
 pub const __IPHONE_14_2: u32 = 140200;
 pub const __IPHONE_14_3: u32 = 140300;
 pub const __IPHONE_14_5: u32 = 140500;
+pub const __IPHONE_14_4: u32 = 140400;
 pub const __IPHONE_14_6: u32 = 140600;
 pub const __IPHONE_14_7: u32 = 140700;
 pub const __IPHONE_14_8: u32 = 140800;
@@ -538,8 +554,62 @@ pub const __IPHONE_15_1: u32 = 150100;
 pub const __IPHONE_15_2: u32 = 150200;
 pub const __IPHONE_15_3: u32 = 150300;
 pub const __IPHONE_15_4: u32 = 150400;
+pub const __IPHONE_15_5: u32 = 150500;
+pub const __IPHONE_15_6: u32 = 150600;
 pub const __IPHONE_16_0: u32 = 160000;
 pub const __IPHONE_16_1: u32 = 160100;
+pub const __IPHONE_16_2: u32 = 160200;
+pub const __IPHONE_16_3: u32 = 160300;
+pub const __IPHONE_16_4: u32 = 160400;
+pub const __IPHONE_16_5: u32 = 160500;
+pub const __IPHONE_16_6: u32 = 160600;
+pub const __IPHONE_16_7: u32 = 160700;
+pub const __IPHONE_17_0: u32 = 170000;
+pub const __IPHONE_17_1: u32 = 170100;
+pub const __IPHONE_17_2: u32 = 170200;
+pub const __WATCHOS_1_0: u32 = 10000;
+pub const __WATCHOS_2_0: u32 = 20000;
+pub const __WATCHOS_2_1: u32 = 20100;
+pub const __WATCHOS_2_2: u32 = 20200;
+pub const __WATCHOS_3_0: u32 = 30000;
+pub const __WATCHOS_3_1: u32 = 30100;
+pub const __WATCHOS_3_1_1: u32 = 30101;
+pub const __WATCHOS_3_2: u32 = 30200;
+pub const __WATCHOS_4_0: u32 = 40000;
+pub const __WATCHOS_4_1: u32 = 40100;
+pub const __WATCHOS_4_2: u32 = 40200;
+pub const __WATCHOS_4_3: u32 = 40300;
+pub const __WATCHOS_5_0: u32 = 50000;
+pub const __WATCHOS_5_1: u32 = 50100;
+pub const __WATCHOS_5_2: u32 = 50200;
+pub const __WATCHOS_5_3: u32 = 50300;
+pub const __WATCHOS_6_0: u32 = 60000;
+pub const __WATCHOS_6_1: u32 = 60100;
+pub const __WATCHOS_6_2: u32 = 60200;
+pub const __WATCHOS_7_0: u32 = 70000;
+pub const __WATCHOS_7_1: u32 = 70100;
+pub const __WATCHOS_7_2: u32 = 70200;
+pub const __WATCHOS_7_3: u32 = 70300;
+pub const __WATCHOS_7_4: u32 = 70400;
+pub const __WATCHOS_7_5: u32 = 70500;
+pub const __WATCHOS_7_6: u32 = 70600;
+pub const __WATCHOS_8_0: u32 = 80000;
+pub const __WATCHOS_8_1: u32 = 80100;
+pub const __WATCHOS_8_3: u32 = 80300;
+pub const __WATCHOS_8_4: u32 = 80400;
+pub const __WATCHOS_8_5: u32 = 80500;
+pub const __WATCHOS_8_6: u32 = 80600;
+pub const __WATCHOS_8_7: u32 = 80700;
+pub const __WATCHOS_9_0: u32 = 90000;
+pub const __WATCHOS_9_1: u32 = 90100;
+pub const __WATCHOS_9_2: u32 = 90200;
+pub const __WATCHOS_9_3: u32 = 90300;
+pub const __WATCHOS_9_4: u32 = 90400;
+pub const __WATCHOS_9_5: u32 = 90500;
+pub const __WATCHOS_9_6: u32 = 90600;
+pub const __WATCHOS_10_0: u32 = 100000;
+pub const __WATCHOS_10_1: u32 = 100100;
+pub const __WATCHOS_10_2: u32 = 100200;
 pub const __TVOS_9_0: u32 = 90000;
 pub const __TVOS_9_1: u32 = 90100;
 pub const __TVOS_9_2: u32 = 90200;
@@ -573,41 +643,52 @@ pub const __TVOS_15_1: u32 = 150100;
 pub const __TVOS_15_2: u32 = 150200;
 pub const __TVOS_15_3: u32 = 150300;
 pub const __TVOS_15_4: u32 = 150400;
+pub const __TVOS_15_5: u32 = 150500;
+pub const __TVOS_15_6: u32 = 150600;
 pub const __TVOS_16_0: u32 = 160000;
 pub const __TVOS_16_1: u32 = 160100;
-pub const __WATCHOS_1_0: u32 = 10000;
-pub const __WATCHOS_2_0: u32 = 20000;
-pub const __WATCHOS_2_1: u32 = 20100;
-pub const __WATCHOS_2_2: u32 = 20200;
-pub const __WATCHOS_3_0: u32 = 30000;
-pub const __WATCHOS_3_1: u32 = 30100;
-pub const __WATCHOS_3_1_1: u32 = 30101;
-pub const __WATCHOS_3_2: u32 = 30200;
-pub const __WATCHOS_4_0: u32 = 40000;
-pub const __WATCHOS_4_1: u32 = 40100;
-pub const __WATCHOS_4_2: u32 = 40200;
-pub const __WATCHOS_4_3: u32 = 40300;
-pub const __WATCHOS_5_0: u32 = 50000;
-pub const __WATCHOS_5_1: u32 = 50100;
-pub const __WATCHOS_5_2: u32 = 50200;
-pub const __WATCHOS_5_3: u32 = 50300;
-pub const __WATCHOS_6_0: u32 = 60000;
-pub const __WATCHOS_6_1: u32 = 60100;
-pub const __WATCHOS_6_2: u32 = 60200;
-pub const __WATCHOS_7_0: u32 = 70000;
-pub const __WATCHOS_7_1: u32 = 70100;
-pub const __WATCHOS_7_2: u32 = 70200;
-pub const __WATCHOS_7_3: u32 = 70300;
-pub const __WATCHOS_7_4: u32 = 70400;
-pub const __WATCHOS_7_5: u32 = 70500;
-pub const __WATCHOS_7_6: u32 = 70600;
-pub const __WATCHOS_8_0: u32 = 80000;
-pub const __WATCHOS_8_1: u32 = 80100;
-pub const __WATCHOS_8_3: u32 = 80300;
-pub const __WATCHOS_8_4: u32 = 80400;
-pub const __WATCHOS_8_5: u32 = 80500;
-pub const __WATCHOS_9_0: u32 = 90000;
-pub const __WATCHOS_9_1: u32 = 90100;
+pub const __TVOS_16_2: u32 = 160200;
+pub const __TVOS_16_3: u32 = 160300;
+pub const __TVOS_16_4: u32 = 160400;
+pub const __TVOS_16_5: u32 = 160500;
+pub const __TVOS_16_6: u32 = 160600;
+pub const __TVOS_17_0: u32 = 170000;
+pub const __TVOS_17_1: u32 = 170100;
+pub const __TVOS_17_2: u32 = 170200;
+pub const __BRIDGEOS_2_0: u32 = 20000;
+pub const __BRIDGEOS_3_0: u32 = 30000;
+pub const __BRIDGEOS_3_1: u32 = 30100;
+pub const __BRIDGEOS_3_4: u32 = 30400;
+pub const __BRIDGEOS_4_0: u32 = 40000;
+pub const __BRIDGEOS_4_1: u32 = 40100;
+pub const __BRIDGEOS_5_0: u32 = 50000;
+pub const __BRIDGEOS_5_1: u32 = 50100;
+pub const __BRIDGEOS_5_3: u32 = 50300;
+pub const __BRIDGEOS_6_0: u32 = 60000;
+pub const __BRIDGEOS_6_2: u32 = 60200;
+pub const __BRIDGEOS_6_4: u32 = 60400;
+pub const __BRIDGEOS_6_5: u32 = 60500;
+pub const __BRIDGEOS_6_6: u32 = 60600;
+pub const __BRIDGEOS_7_0: u32 = 70000;
+pub const __BRIDGEOS_7_1: u32 = 70100;
+pub const __BRIDGEOS_7_2: u32 = 70200;
+pub const __BRIDGEOS_7_3: u32 = 70300;
+pub const __BRIDGEOS_7_4: u32 = 70400;
+pub const __BRIDGEOS_7_6: u32 = 70600;
+pub const __BRIDGEOS_8_0: u32 = 80000;
+pub const __BRIDGEOS_8_1: u32 = 80100;
+pub const __BRIDGEOS_8_2: u32 = 80200;
+pub const __DRIVERKIT_19_0: u32 = 190000;
+pub const __DRIVERKIT_20_0: u32 = 200000;
+pub const __DRIVERKIT_21_0: u32 = 210000;
+pub const __DRIVERKIT_22_0: u32 = 220000;
+pub const __DRIVERKIT_22_4: u32 = 220400;
+pub const __DRIVERKIT_22_5: u32 = 220500;
+pub const __DRIVERKIT_22_6: u32 = 220600;
+pub const __DRIVERKIT_23_0: u32 = 230000;
+pub const __DRIVERKIT_23_1: u32 = 230100;
+pub const __DRIVERKIT_23_2: u32 = 230200;
+pub const __VISIONOS_1_0: u32 = 10000;
 pub const MAC_OS_X_VERSION_10_0: u32 = 1000;
 pub const MAC_OS_X_VERSION_10_1: u32 = 1010;
 pub const MAC_OS_X_VERSION_10_2: u32 = 1020;
@@ -636,24 +717,44 @@ pub const MAC_OS_X_VERSION_10_13_4: u32 = 101304;
 pub const MAC_OS_X_VERSION_10_14: u32 = 101400;
 pub const MAC_OS_X_VERSION_10_14_1: u32 = 101401;
 pub const MAC_OS_X_VERSION_10_14_4: u32 = 101404;
+pub const MAC_OS_X_VERSION_10_14_5: u32 = 101405;
 pub const MAC_OS_X_VERSION_10_14_6: u32 = 101406;
 pub const MAC_OS_X_VERSION_10_15: u32 = 101500;
 pub const MAC_OS_X_VERSION_10_15_1: u32 = 101501;
+pub const MAC_OS_X_VERSION_10_15_4: u32 = 101504;
 pub const MAC_OS_X_VERSION_10_16: u32 = 101600;
 pub const MAC_OS_VERSION_11_0: u32 = 110000;
+pub const MAC_OS_VERSION_11_1: u32 = 110100;
+pub const MAC_OS_VERSION_11_3: u32 = 110300;
+pub const MAC_OS_VERSION_11_4: u32 = 110400;
+pub const MAC_OS_VERSION_11_5: u32 = 110500;
+pub const MAC_OS_VERSION_11_6: u32 = 110600;
 pub const MAC_OS_VERSION_12_0: u32 = 120000;
+pub const MAC_OS_VERSION_12_1: u32 = 120100;
+pub const MAC_OS_VERSION_12_2: u32 = 120200;
+pub const MAC_OS_VERSION_12_3: u32 = 120300;
+pub const MAC_OS_VERSION_12_4: u32 = 120400;
+pub const MAC_OS_VERSION_12_5: u32 = 120500;
+pub const MAC_OS_VERSION_12_6: u32 = 120600;
+pub const MAC_OS_VERSION_12_7: u32 = 120700;
 pub const MAC_OS_VERSION_13_0: u32 = 130000;
-pub const __DRIVERKIT_19_0: u32 = 190000;
-pub const __DRIVERKIT_20_0: u32 = 200000;
-pub const __DRIVERKIT_21_0: u32 = 210000;
-pub const __MAC_OS_X_VERSION_MAX_ALLOWED: u32 = 130000;
+pub const MAC_OS_VERSION_13_1: u32 = 130100;
+pub const MAC_OS_VERSION_13_2: u32 = 130200;
+pub const MAC_OS_VERSION_13_3: u32 = 130300;
+pub const MAC_OS_VERSION_13_4: u32 = 130400;
+pub const MAC_OS_VERSION_13_5: u32 = 130500;
+pub const MAC_OS_VERSION_13_6: u32 = 130600;
+pub const MAC_OS_VERSION_14_0: u32 = 140000;
+pub const MAC_OS_VERSION_14_1: u32 = 140100;
+pub const MAC_OS_VERSION_14_2: u32 = 140200;
+pub const __MAC_OS_X_VERSION_MAX_ALLOWED: u32 = 140200;
 pub const __ENABLE_LEGACY_MAC_AVAILABILITY: u32 = 1;
 pub const __DARWIN_WCHAR_MIN: i32 = -2147483648;
 pub const _FORTIFY_SOURCE: u32 = 2;
 pub const __DARWIN_CLK_TCK: u32 = 100;
-pub const CHAR_BIT: u32 = 8;
 pub const MB_LEN_MAX: u32 = 6;
 pub const CLK_TCK: u32 = 100;
+pub const CHAR_BIT: u32 = 8;
 pub const SCHAR_MAX: u32 = 127;
 pub const SCHAR_MIN: i32 = -128;
 pub const UCHAR_MAX: u32 = 255;
@@ -797,6 +898,11 @@ pub const RENAME_SWAP: u32 = 2;
 pub const RENAME_EXCL: u32 = 4;
 pub const RENAME_RESERVED1: u32 = 8;
 pub const RENAME_NOFOLLOW_ANY: u32 = 16;
+pub const SEEK_SET: u32 = 0;
+pub const SEEK_CUR: u32 = 1;
+pub const SEEK_END: u32 = 2;
+pub const SEEK_HOLE: u32 = 3;
+pub const SEEK_DATA: u32 = 4;
 pub const __SLBF: u32 = 1;
 pub const __SNBF: u32 = 2;
 pub const __SRD: u32 = 4;
@@ -823,9 +929,6 @@ pub const FILENAME_MAX: u32 = 1024;
 pub const P_tmpdir: &[u8; 10usize] = b"/var/tmp/\0";
 pub const L_tmpnam: u32 = 1024;
 pub const TMP_MAX: u32 = 308915776;
-pub const SEEK_SET: u32 = 0;
-pub const SEEK_CUR: u32 = 1;
-pub const SEEK_END: u32 = 2;
 pub const L_ctermid: u32 = 1024;
 pub const _USE_FORTIFY_LEVEL: u32 = 2;
 pub const __DARWIN_NSIG: u32 = 32;
@@ -1018,6 +1121,8 @@ pub const IOPOL_VFS_ALLOW_LOW_SPACE_WRITES_OFF: u32 = 0;
 pub const IOPOL_VFS_ALLOW_LOW_SPACE_WRITES_ON: u32 = 1;
 pub const IOPOL_VFS_DISALLOW_RW_FOR_O_EVTONLY_DEFAULT: u32 = 0;
 pub const IOPOL_VFS_DISALLOW_RW_FOR_O_EVTONLY_ON: u32 = 1;
+pub const IOPOL_VFS_NOCACHE_WRITE_FS_BLKSIZE_DEFAULT: u32 = 0;
+pub const IOPOL_VFS_NOCACHE_WRITE_FS_BLKSIZE_ON: u32 = 1;
 pub const WNOHANG: u32 = 1;
 pub const WUNTRACED: u32 = 2;
 pub const WCOREFLAG: u32 = 128;
@@ -1044,15 +1149,28 @@ pub const RAND_MAX: u32 = 2147483647;
 pub const __HAS_FIXED_CHK_PROTOTYPES: u32 = 1;
 pub const AV_HAVE_BIGENDIAN: u32 = 0;
 pub const AV_HAVE_FAST_UNALIGNED: u32 = 1;
-pub const LIBAVUTIL_VERSION_MAJOR: u32 = 58;
-pub const LIBAVUTIL_VERSION_MINOR: u32 = 2;
-pub const LIBAVUTIL_VERSION_MICRO: u32 = 100;
 pub const AVERROR_EXPERIMENTAL: i32 = -733130664;
 pub const AVERROR_INPUT_CHANGED: i32 = -1668179713;
 pub const AVERROR_OUTPUT_CHANGED: i32 = -1668179714;
 pub const AV_ERROR_MAX_STRING_SIZE: u32 = 64;
+pub const LIBAVUTIL_VERSION_MAJOR: u32 = 58;
+pub const LIBAVUTIL_VERSION_MINOR: u32 = 29;
+pub const LIBAVUTIL_VERSION_MICRO: u32 = 100;
+pub const M_Ef: f64 = 2.718281828459045;
+pub const M_LN2f: f64 = 0.6931471805599453;
+pub const M_LN10f: f64 = 2.302585092994046;
 pub const M_LOG2_10: f64 = 3.321928094887362;
+pub const M_LOG2_10f: f64 = 3.321928094887362;
 pub const M_PHI: f64 = 1.618033988749895;
+pub const M_PHIf: f64 = 1.618033988749895;
+pub const M_PIf: f64 = 3.141592653589793;
+pub const M_PI_2f: f64 = 1.5707963267948966;
+pub const M_PI_4f: f64 = 0.7853981633974483;
+pub const M_1_PIf: f64 = 0.3183098861837907;
+pub const M_2_PIf: f64 = 0.6366197723675814;
+pub const M_2_SQRTPIf: f64 = 1.1283791670955126;
+pub const M_SQRT1_2f: f64 = 0.7071067811865476;
+pub const M_SQRT2f: f64 = 1.4142135623730951;
 pub const __GNUC_VA_LIST: u32 = 1;
 pub const AV_LOG_QUIET: i32 = -8;
 pub const AV_LOG_PANIC: u32 = 0;
@@ -1070,6 +1188,7 @@ pub const AVPALETTE_SIZE: u32 = 1024;
 pub const AVPALETTE_COUNT: u32 = 256;
 pub const AV_FOURCC_MAX_STRING_SIZE: u32 = 32;
 pub const AV_BUFFER_FLAG_READONLY: u32 = 1;
+pub const AV_CH_LAYOUT_NATIVE: i64 = -9223372036854775808;
 pub const AV_DICT_MATCH_CASE: u32 = 1;
 pub const AV_DICT_IGNORE_SUFFIX: u32 = 2;
 pub const AV_DICT_DONT_STRDUP_KEY: u32 = 4;
@@ -1077,10 +1196,12 @@ pub const AV_DICT_DONT_STRDUP_VAL: u32 = 8;
 pub const AV_DICT_DONT_OVERWRITE: u32 = 16;
 pub const AV_DICT_APPEND: u32 = 32;
 pub const AV_DICT_MULTIKEY: u32 = 64;
-pub const AV_CH_LAYOUT_NATIVE: i64 = -9223372036854775808;
 pub const AV_NUM_DATA_POINTERS: u32 = 8;
 pub const AV_FRAME_FLAG_CORRUPT: u32 = 1;
+pub const AV_FRAME_FLAG_KEY: u32 = 2;
 pub const AV_FRAME_FLAG_DISCARD: u32 = 4;
+pub const AV_FRAME_FLAG_INTERLACED: u32 = 8;
+pub const AV_FRAME_FLAG_TOP_FIELD_FIRST: u32 = 16;
 pub const FF_DECODE_ERROR_INVALID_BITSTREAM: u32 = 1;
 pub const FF_DECODE_ERROR_MISSING_REFERENCE: u32 = 2;
 pub const FF_DECODE_ERROR_CONCEALMENT_ACTIVE: u32 = 4;
@@ -1104,12 +1225,6 @@ pub const AV_CODEC_CAP_HYBRID: u32 = 524288;
 pub const AV_CODEC_CAP_ENCODER_REORDERED_OPAQUE: u32 = 1048576;
 pub const AV_CODEC_CAP_ENCODER_FLUSH: u32 = 2097152;
 pub const AV_CODEC_CAP_ENCODER_RECON_FRAME: u32 = 4194304;
-pub const AV_CODEC_PROP_INTRA_ONLY: u32 = 1;
-pub const AV_CODEC_PROP_LOSSY: u32 = 2;
-pub const AV_CODEC_PROP_LOSSLESS: u32 = 4;
-pub const AV_CODEC_PROP_REORDER: u32 = 8;
-pub const AV_CODEC_PROP_BITMAP_SUB: u32 = 65536;
-pub const AV_CODEC_PROP_TEXT_SUB: u32 = 131072;
 pub const AV_INPUT_BUFFER_PADDING_SIZE: u32 = 64;
 pub const AV_EF_CRCCHECK: u32 = 1;
 pub const AV_EF_BITSTREAM: u32 = 2;
@@ -1124,13 +1239,129 @@ pub const FF_COMPLIANCE_STRICT: u32 = 1;
 pub const FF_COMPLIANCE_NORMAL: u32 = 0;
 pub const FF_COMPLIANCE_UNOFFICIAL: i32 = -1;
 pub const FF_COMPLIANCE_EXPERIMENTAL: i32 = -2;
+pub const AV_PROFILE_UNKNOWN: i32 = -99;
+pub const AV_PROFILE_RESERVED: i32 = -100;
+pub const AV_PROFILE_AAC_MAIN: u32 = 0;
+pub const AV_PROFILE_AAC_LOW: u32 = 1;
+pub const AV_PROFILE_AAC_SSR: u32 = 2;
+pub const AV_PROFILE_AAC_LTP: u32 = 3;
+pub const AV_PROFILE_AAC_HE: u32 = 4;
+pub const AV_PROFILE_AAC_HE_V2: u32 = 28;
+pub const AV_PROFILE_AAC_LD: u32 = 22;
+pub const AV_PROFILE_AAC_ELD: u32 = 38;
+pub const AV_PROFILE_MPEG2_AAC_LOW: u32 = 128;
+pub const AV_PROFILE_MPEG2_AAC_HE: u32 = 131;
+pub const AV_PROFILE_DNXHD: u32 = 0;
+pub const AV_PROFILE_DNXHR_LB: u32 = 1;
+pub const AV_PROFILE_DNXHR_SQ: u32 = 2;
+pub const AV_PROFILE_DNXHR_HQ: u32 = 3;
+pub const AV_PROFILE_DNXHR_HQX: u32 = 4;
+pub const AV_PROFILE_DNXHR_444: u32 = 5;
+pub const AV_PROFILE_DTS: u32 = 20;
+pub const AV_PROFILE_DTS_ES: u32 = 30;
+pub const AV_PROFILE_DTS_96_24: u32 = 40;
+pub const AV_PROFILE_DTS_HD_HRA: u32 = 50;
+pub const AV_PROFILE_DTS_HD_MA: u32 = 60;
+pub const AV_PROFILE_DTS_EXPRESS: u32 = 70;
+pub const AV_PROFILE_DTS_HD_MA_X: u32 = 61;
+pub const AV_PROFILE_DTS_HD_MA_X_IMAX: u32 = 62;
+pub const AV_PROFILE_EAC3_DDP_ATMOS: u32 = 30;
+pub const AV_PROFILE_TRUEHD_ATMOS: u32 = 30;
+pub const AV_PROFILE_MPEG2_422: u32 = 0;
+pub const AV_PROFILE_MPEG2_HIGH: u32 = 1;
+pub const AV_PROFILE_MPEG2_SS: u32 = 2;
+pub const AV_PROFILE_MPEG2_SNR_SCALABLE: u32 = 3;
+pub const AV_PROFILE_MPEG2_MAIN: u32 = 4;
+pub const AV_PROFILE_MPEG2_SIMPLE: u32 = 5;
+pub const AV_PROFILE_H264_CONSTRAINED: u32 = 512;
+pub const AV_PROFILE_H264_INTRA: u32 = 2048;
+pub const AV_PROFILE_H264_BASELINE: u32 = 66;
+pub const AV_PROFILE_H264_CONSTRAINED_BASELINE: u32 = 578;
+pub const AV_PROFILE_H264_MAIN: u32 = 77;
+pub const AV_PROFILE_H264_EXTENDED: u32 = 88;
+pub const AV_PROFILE_H264_HIGH: u32 = 100;
+pub const AV_PROFILE_H264_HIGH_10: u32 = 110;
+pub const AV_PROFILE_H264_HIGH_10_INTRA: u32 = 2158;
+pub const AV_PROFILE_H264_MULTIVIEW_HIGH: u32 = 118;
+pub const AV_PROFILE_H264_HIGH_422: u32 = 122;
+pub const AV_PROFILE_H264_HIGH_422_INTRA: u32 = 2170;
+pub const AV_PROFILE_H264_STEREO_HIGH: u32 = 128;
+pub const AV_PROFILE_H264_HIGH_444: u32 = 144;
+pub const AV_PROFILE_H264_HIGH_444_PREDICTIVE: u32 = 244;
+pub const AV_PROFILE_H264_HIGH_444_INTRA: u32 = 2292;
+pub const AV_PROFILE_H264_CAVLC_444: u32 = 44;
+pub const AV_PROFILE_VC1_SIMPLE: u32 = 0;
+pub const AV_PROFILE_VC1_MAIN: u32 = 1;
+pub const AV_PROFILE_VC1_COMPLEX: u32 = 2;
+pub const AV_PROFILE_VC1_ADVANCED: u32 = 3;
+pub const AV_PROFILE_MPEG4_SIMPLE: u32 = 0;
+pub const AV_PROFILE_MPEG4_SIMPLE_SCALABLE: u32 = 1;
+pub const AV_PROFILE_MPEG4_CORE: u32 = 2;
+pub const AV_PROFILE_MPEG4_MAIN: u32 = 3;
+pub const AV_PROFILE_MPEG4_N_BIT: u32 = 4;
+pub const AV_PROFILE_MPEG4_SCALABLE_TEXTURE: u32 = 5;
+pub const AV_PROFILE_MPEG4_SIMPLE_FACE_ANIMATION: u32 = 6;
+pub const AV_PROFILE_MPEG4_BASIC_ANIMATED_TEXTURE: u32 = 7;
+pub const AV_PROFILE_MPEG4_HYBRID: u32 = 8;
+pub const AV_PROFILE_MPEG4_ADVANCED_REAL_TIME: u32 = 9;
+pub const AV_PROFILE_MPEG4_CORE_SCALABLE: u32 = 10;
+pub const AV_PROFILE_MPEG4_ADVANCED_CODING: u32 = 11;
+pub const AV_PROFILE_MPEG4_ADVANCED_CORE: u32 = 12;
+pub const AV_PROFILE_MPEG4_ADVANCED_SCALABLE_TEXTURE: u32 = 13;
+pub const AV_PROFILE_MPEG4_SIMPLE_STUDIO: u32 = 14;
+pub const AV_PROFILE_MPEG4_ADVANCED_SIMPLE: u32 = 15;
+pub const AV_PROFILE_JPEG2000_CSTREAM_RESTRICTION_0: u32 = 1;
+pub const AV_PROFILE_JPEG2000_CSTREAM_RESTRICTION_1: u32 = 2;
+pub const AV_PROFILE_JPEG2000_CSTREAM_NO_RESTRICTION: u32 = 32768;
+pub const AV_PROFILE_JPEG2000_DCINEMA_2K: u32 = 3;
+pub const AV_PROFILE_JPEG2000_DCINEMA_4K: u32 = 4;
+pub const AV_PROFILE_VP9_0: u32 = 0;
+pub const AV_PROFILE_VP9_1: u32 = 1;
+pub const AV_PROFILE_VP9_2: u32 = 2;
+pub const AV_PROFILE_VP9_3: u32 = 3;
+pub const AV_PROFILE_HEVC_MAIN: u32 = 1;
+pub const AV_PROFILE_HEVC_MAIN_10: u32 = 2;
+pub const AV_PROFILE_HEVC_MAIN_STILL_PICTURE: u32 = 3;
+pub const AV_PROFILE_HEVC_REXT: u32 = 4;
+pub const AV_PROFILE_HEVC_SCC: u32 = 9;
+pub const AV_PROFILE_VVC_MAIN_10: u32 = 1;
+pub const AV_PROFILE_VVC_MAIN_10_444: u32 = 33;
+pub const AV_PROFILE_AV1_MAIN: u32 = 0;
+pub const AV_PROFILE_AV1_HIGH: u32 = 1;
+pub const AV_PROFILE_AV1_PROFESSIONAL: u32 = 2;
+pub const AV_PROFILE_MJPEG_HUFFMAN_BASELINE_DCT: u32 = 192;
+pub const AV_PROFILE_MJPEG_HUFFMAN_EXTENDED_SEQUENTIAL_DCT: u32 = 193;
+pub const AV_PROFILE_MJPEG_HUFFMAN_PROGRESSIVE_DCT: u32 = 194;
+pub const AV_PROFILE_MJPEG_HUFFMAN_LOSSLESS: u32 = 195;
+pub const AV_PROFILE_MJPEG_JPEG_LS: u32 = 247;
+pub const AV_PROFILE_SBC_MSBC: u32 = 1;
+pub const AV_PROFILE_PRORES_PROXY: u32 = 0;
+pub const AV_PROFILE_PRORES_LT: u32 = 1;
+pub const AV_PROFILE_PRORES_STANDARD: u32 = 2;
+pub const AV_PROFILE_PRORES_HQ: u32 = 3;
+pub const AV_PROFILE_PRORES_4444: u32 = 4;
+pub const AV_PROFILE_PRORES_XQ: u32 = 5;
+pub const AV_PROFILE_ARIB_PROFILE_A: u32 = 0;
+pub const AV_PROFILE_ARIB_PROFILE_C: u32 = 1;
+pub const AV_PROFILE_KLVA_SYNC: u32 = 0;
+pub const AV_PROFILE_KLVA_ASYNC: u32 = 1;
+pub const AV_PROFILE_EVC_BASELINE: u32 = 0;
+pub const AV_PROFILE_EVC_MAIN: u32 = 1;
+pub const AV_LEVEL_UNKNOWN: i32 = -99;
 pub const AV_PKT_FLAG_KEY: u32 = 1;
 pub const AV_PKT_FLAG_CORRUPT: u32 = 2;
 pub const AV_PKT_FLAG_DISCARD: u32 = 4;
 pub const AV_PKT_FLAG_TRUSTED: u32 = 8;
 pub const AV_PKT_FLAG_DISPOSABLE: u32 = 16;
-pub const LIBAVCODEC_VERSION_MINOR: u32 = 3;
-pub const LIBAVCODEC_VERSION_MICRO: u32 = 100;
+pub const LIBAVCODEC_VERSION_MINOR: u32 = 31;
+pub const LIBAVCODEC_VERSION_MICRO: u32 = 102;
+pub const AV_CODEC_PROP_INTRA_ONLY: u32 = 1;
+pub const AV_CODEC_PROP_LOSSY: u32 = 2;
+pub const AV_CODEC_PROP_LOSSLESS: u32 = 4;
+pub const AV_CODEC_PROP_REORDER: u32 = 8;
+pub const AV_CODEC_PROP_FIELDS: u32 = 16;
+pub const AV_CODEC_PROP_BITMAP_SUB: u32 = 65536;
+pub const AV_CODEC_PROP_TEXT_SUB: u32 = 131072;
 pub const AV_INPUT_BUFFER_MIN_SIZE: u32 = 16384;
 pub const AV_CODEC_FLAG_UNALIGNED: u32 = 1;
 pub const AV_CODEC_FLAG_QSCALE: u32 = 2;
@@ -1272,6 +1503,10 @@ pub const FF_PROFILE_DTS_96_24: u32 = 40;
 pub const FF_PROFILE_DTS_HD_HRA: u32 = 50;
 pub const FF_PROFILE_DTS_HD_MA: u32 = 60;
 pub const FF_PROFILE_DTS_EXPRESS: u32 = 70;
+pub const FF_PROFILE_DTS_HD_MA_X: u32 = 61;
+pub const FF_PROFILE_DTS_HD_MA_X_IMAX: u32 = 62;
+pub const FF_PROFILE_EAC3_DDP_ATMOS: u32 = 30;
+pub const FF_PROFILE_TRUEHD_ATMOS: u32 = 30;
 pub const FF_PROFILE_MPEG2_422: u32 = 0;
 pub const FF_PROFILE_MPEG2_HIGH: u32 = 1;
 pub const FF_PROFILE_MPEG2_SS: u32 = 2;
@@ -1328,6 +1563,7 @@ pub const FF_PROFILE_HEVC_MAIN: u32 = 1;
 pub const FF_PROFILE_HEVC_MAIN_10: u32 = 2;
 pub const FF_PROFILE_HEVC_MAIN_STILL_PICTURE: u32 = 3;
 pub const FF_PROFILE_HEVC_REXT: u32 = 4;
+pub const FF_PROFILE_HEVC_SCC: u32 = 9;
 pub const FF_PROFILE_VVC_MAIN_10: u32 = 1;
 pub const FF_PROFILE_VVC_MAIN_10_444: u32 = 33;
 pub const FF_PROFILE_AV1_MAIN: u32 = 0;
@@ -1349,6 +1585,8 @@ pub const FF_PROFILE_ARIB_PROFILE_A: u32 = 0;
 pub const FF_PROFILE_ARIB_PROFILE_C: u32 = 1;
 pub const FF_PROFILE_KLVA_SYNC: u32 = 0;
 pub const FF_PROFILE_KLVA_ASYNC: u32 = 1;
+pub const FF_PROFILE_EVC_BASELINE: u32 = 0;
+pub const FF_PROFILE_EVC_MAIN: u32 = 1;
 pub const FF_LEVEL_UNKNOWN: i32 = -99;
 pub const FF_SUB_CHARENC_MODE_DO_NOTHING: i32 = -1;
 pub const FF_SUB_CHARENC_MODE_AUTOMATIC: u32 = 0;
@@ -1373,7 +1611,7 @@ pub const VORBIS_FLAG_HEADER: u32 = 1;
 pub const VORBIS_FLAG_COMMENT: u32 = 2;
 pub const VORBIS_FLAG_SETUP: u32 = 4;
 pub const LIBAVDEVICE_VERSION_MAJOR: u32 = 60;
-pub const LIBAVDEVICE_VERSION_MINOR: u32 = 1;
+pub const LIBAVDEVICE_VERSION_MINOR: u32 = 3;
 pub const LIBAVDEVICE_VERSION_MICRO: u32 = 100;
 pub const AV_OPT_FLAG_ENCODING_PARAM: u32 = 1;
 pub const AV_OPT_FLAG_DECODING_PARAM: u32 = 2;
@@ -1393,7 +1631,6 @@ pub const AV_OPT_ALLOW_NULL: u32 = 4;
 pub const AV_OPT_MULTI_COMPONENT_RANGE: u32 = 4096;
 pub const AV_OPT_SERIALIZE_SKIP_DEFAULTS: u32 = 1;
 pub const AV_OPT_SERIALIZE_OPT_FLAGS_EXACT: u32 = 2;
-pub const TIME_UTC: u32 = 1;
 pub const LIBAVFORMAT_VERSION_MAJOR: u32 = 60;
 pub const FF_API_R_FRAME_RATE: u32 = 1;
 pub const AVIO_SEEKABLE_NORMAL: u32 = 1;
@@ -1405,7 +1642,7 @@ pub const AVIO_FLAG_WRITE: u32 = 2;
 pub const AVIO_FLAG_READ_WRITE: u32 = 3;
 pub const AVIO_FLAG_NONBLOCK: u32 = 8;
 pub const AVIO_FLAG_DIRECT: u32 = 32768;
-pub const LIBAVFORMAT_VERSION_MINOR: u32 = 3;
+pub const LIBAVFORMAT_VERSION_MINOR: u32 = 16;
 pub const LIBAVFORMAT_VERSION_MICRO: u32 = 100;
 pub const AVPROBE_SCORE_EXTENSION: u32 = 50;
 pub const AVPROBE_SCORE_MIME: u32 = 75;
@@ -1486,12 +1723,13 @@ pub const AVSTREAM_INIT_IN_WRITE_HEADER: u32 = 0;
 pub const AVSTREAM_INIT_IN_INIT_OUTPUT: u32 = 1;
 pub const AV_FRAME_FILENAME_FLAGS_MULTIPLE: u32 = 1;
 pub const LIBAVFILTER_VERSION_MAJOR: u32 = 9;
-pub const LIBAVFILTER_VERSION_MINOR: u32 = 3;
+pub const LIBAVFILTER_VERSION_MINOR: u32 = 12;
 pub const LIBAVFILTER_VERSION_MICRO: u32 = 100;
 pub const AVFILTER_FLAG_DYNAMIC_INPUTS: u32 = 1;
 pub const AVFILTER_FLAG_DYNAMIC_OUTPUTS: u32 = 2;
 pub const AVFILTER_FLAG_SLICE_THREADS: u32 = 4;
 pub const AVFILTER_FLAG_METADATA_ONLY: u32 = 8;
+pub const AVFILTER_FLAG_HWDEVICE: u32 = 16;
 pub const AVFILTER_FLAG_SUPPORT_TIMELINE_GENERIC: u32 = 65536;
 pub const AVFILTER_FLAG_SUPPORT_TIMELINE_INTERNAL: u32 = 131072;
 pub const AVFILTER_FLAG_SUPPORT_TIMELINE: u32 = 196608;
@@ -1552,6 +1790,8 @@ pub const AV_CPU_FLAG_VFPV3: u32 = 16;
 pub const AV_CPU_FLAG_NEON: u32 = 32;
 pub const AV_CPU_FLAG_ARMV8: u32 = 64;
 pub const AV_CPU_FLAG_VFP_VM: u32 = 128;
+pub const AV_CPU_FLAG_DOTPROD: u32 = 256;
+pub const AV_CPU_FLAG_I8MM: u32 = 512;
 pub const AV_CPU_FLAG_SETEND: u32 = 65536;
 pub const AV_CPU_FLAG_MMI: u32 = 1;
 pub const AV_CPU_FLAG_MSA: u32 = 2;
@@ -1565,6 +1805,7 @@ pub const AV_CPU_FLAG_RVV_F32: u32 = 16;
 pub const AV_CPU_FLAG_RVV_I64: u32 = 32;
 pub const AV_CPU_FLAG_RVV_F64: u32 = 64;
 pub const AV_CPU_FLAG_RVB_BASIC: u32 = 128;
+pub const AV_CPU_FLAG_RVB_ADDR: u32 = 256;
 pub const AV_FIFO_FLAG_AUTO_GROW: u32 = 1;
 pub const AV_HASH_MAX_SIZE: u32 = 64;
 pub const AV_PIX_FMT_FLAG_BE: u32 = 1;
@@ -1584,14 +1825,15 @@ pub const FF_LOSS_COLORQUANT: u32 = 16;
 pub const FF_LOSS_CHROMA: u32 = 32;
 pub const FF_LOSS_EXCESS_RESOLUTION: u32 = 64;
 pub const FF_LOSS_EXCESS_DEPTH: u32 = 128;
+pub const TIME_UTC: u32 = 1;
 pub const AV_STEREO3D_FLAG_INVERT: u32 = 1;
 pub const AV_TIMECODE_STR_SIZE: u32 = 23;
 pub const LIBSWRESAMPLE_VERSION_MAJOR: u32 = 4;
-pub const LIBSWRESAMPLE_VERSION_MINOR: u32 = 10;
+pub const LIBSWRESAMPLE_VERSION_MINOR: u32 = 12;
 pub const LIBSWRESAMPLE_VERSION_MICRO: u32 = 100;
 pub const SWR_FLAG_RESAMPLE: u32 = 1;
 pub const LIBSWSCALE_VERSION_MAJOR: u32 = 7;
-pub const LIBSWSCALE_VERSION_MINOR: u32 = 1;
+pub const LIBSWSCALE_VERSION_MINOR: u32 = 5;
 pub const LIBSWSCALE_VERSION_MICRO: u32 = 100;
 pub const SWS_FAST_BILINEAR: u32 = 1;
 pub const SWS_BILINEAR: u32 = 2;
@@ -2308,7 +2550,7 @@ extern "C" {
 extern "C" {
     #[doc = " Copy samples from src to dst.\n\n @param dst destination array of pointers to data planes\n @param src source array of pointers to data planes\n @param dst_offset offset in samples at which the data will be written to dst\n @param src_offset offset in samples at which the data will be read from src\n @param nb_samples number of samples to be copied\n @param nb_channels number of audio channels\n @param sample_fmt audio sample format"]
     pub fn av_samples_copy(
-        dst: *mut *mut u8,
+        dst: *const *mut u8,
         src: *const *mut u8,
         dst_offset: ::std::os::raw::c_int,
         src_offset: ::std::os::raw::c_int,
@@ -2320,7 +2562,7 @@ extern "C" {
 extern "C" {
     #[doc = " Fill an audio buffer with silence.\n\n @param audio_data  array of pointers to data planes\n @param offset      offset in samples at which to start filling\n @param nb_samples  number of samples to fill\n @param nb_channels number of audio channels\n @param sample_fmt  audio sample format"]
     pub fn av_samples_set_silence(
-        audio_data: *mut *mut u8,
+        audio_data: *const *mut u8,
         offset: ::std::os::raw::c_int,
         nb_samples: ::std::os::raw::c_int,
         nb_channels: ::std::os::raw::c_int,
@@ -8608,6 +8850,102 @@ fn bindgen_test_layout_lldiv_t() {
 extern "C" {
     pub static mut __mb_cur_max: ::std::os::raw::c_int;
 }
+pub type malloc_type_id_t = ::std::os::raw::c_ulonglong;
+extern "C" {
+    pub fn malloc_type_malloc(
+        size: usize,
+        type_id: malloc_type_id_t,
+    ) -> *mut ::std::os::raw::c_void;
+}
+extern "C" {
+    pub fn malloc_type_calloc(
+        count: usize,
+        size: usize,
+        type_id: malloc_type_id_t,
+    ) -> *mut ::std::os::raw::c_void;
+}
+extern "C" {
+    pub fn malloc_type_free(ptr: *mut ::std::os::raw::c_void, type_id: malloc_type_id_t);
+}
+extern "C" {
+    pub fn malloc_type_realloc(
+        ptr: *mut ::std::os::raw::c_void,
+        size: usize,
+        type_id: malloc_type_id_t,
+    ) -> *mut ::std::os::raw::c_void;
+}
+extern "C" {
+    pub fn malloc_type_valloc(
+        size: usize,
+        type_id: malloc_type_id_t,
+    ) -> *mut ::std::os::raw::c_void;
+}
+extern "C" {
+    pub fn malloc_type_aligned_alloc(
+        alignment: usize,
+        size: usize,
+        type_id: malloc_type_id_t,
+    ) -> *mut ::std::os::raw::c_void;
+}
+extern "C" {
+    pub fn malloc_type_posix_memalign(
+        memptr: *mut *mut ::std::os::raw::c_void,
+        alignment: usize,
+        size: usize,
+        type_id: malloc_type_id_t,
+    ) -> ::std::os::raw::c_int;
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct _malloc_zone_t {
+    _unused: [u8; 0],
+}
+pub type malloc_zone_t = _malloc_zone_t;
+extern "C" {
+    pub fn malloc_type_zone_malloc(
+        zone: *mut malloc_zone_t,
+        size: usize,
+        type_id: malloc_type_id_t,
+    ) -> *mut ::std::os::raw::c_void;
+}
+extern "C" {
+    pub fn malloc_type_zone_calloc(
+        zone: *mut malloc_zone_t,
+        count: usize,
+        size: usize,
+        type_id: malloc_type_id_t,
+    ) -> *mut ::std::os::raw::c_void;
+}
+extern "C" {
+    pub fn malloc_type_zone_free(
+        zone: *mut malloc_zone_t,
+        ptr: *mut ::std::os::raw::c_void,
+        type_id: malloc_type_id_t,
+    );
+}
+extern "C" {
+    pub fn malloc_type_zone_realloc(
+        zone: *mut malloc_zone_t,
+        ptr: *mut ::std::os::raw::c_void,
+        size: usize,
+        type_id: malloc_type_id_t,
+    ) -> *mut ::std::os::raw::c_void;
+}
+extern "C" {
+    pub fn malloc_type_zone_valloc(
+        zone: *mut malloc_zone_t,
+        size: usize,
+        type_id: malloc_type_id_t,
+    ) -> *mut ::std::os::raw::c_void;
+}
+extern "C" {
+    pub fn malloc_type_zone_memalign(
+        zone: *mut malloc_zone_t,
+        alignment: usize,
+        size: usize,
+        type_id: malloc_type_id_t,
+    ) -> *mut ::std::os::raw::c_void;
+}
 extern "C" {
     pub fn malloc(__size: ::std::os::raw::c_ulong) -> *mut ::std::os::raw::c_void;
 }
@@ -9535,6 +9873,15 @@ extern "C" {
 extern "C" {
     pub fn flsll(arg1: ::std::os::raw::c_longlong) -> ::std::os::raw::c_int;
 }
+pub type max_align_t = f64;
+extern "C" {
+    #[doc = " Put a description of the AVERROR code errnum in errbuf.\n In case of failure the global variable errno is set to indicate the\n error. Even in case of failure av_strerror() will print a generic\n error message indicating the errnum provided to errbuf.\n\n @param errnum      error code to describe\n @param errbuf      buffer to which description is written\n @param errbuf_size the size in bytes of errbuf\n @return 0 on success, a negative value if a description for errnum\n cannot be found"]
+    pub fn av_strerror(
+        errnum: ::std::os::raw::c_int,
+        errbuf: *mut ::std::os::raw::c_char,
+        errbuf_size: usize,
+    ) -> ::std::os::raw::c_int;
+}
 extern "C" {
     pub fn av_log2(v: ::std::os::raw::c_uint) -> ::std::os::raw::c_int;
 }
@@ -9670,15 +10017,6 @@ extern "C" {
 extern "C" {
     #[doc = " Set the maximum size that may be allocated in one block.\n\n The value specified with this function is effective for all libavutil's @ref\n lavu_mem_funcs \"heap management functions.\"\n\n By default, the max value is defined as `INT_MAX`.\n\n @param max Value to be set as the new maximum size\n\n @warning Exercise extreme caution when using this function. Don't touch\n          this if you do not understand the full consequence of doing so."]
     pub fn av_max_alloc(max: usize);
-}
-pub type max_align_t = f64;
-extern "C" {
-    #[doc = " Put a description of the AVERROR code errnum in errbuf.\n In case of failure the global variable errno is set to indicate the\n error. Even in case of failure av_strerror() will print a generic\n error message indicating the errnum provided to errbuf.\n\n @param errnum      error code to describe\n @param errbuf      buffer to which description is written\n @param errbuf_size the size in bytes of errbuf\n @return 0 on success, a negative value if a description for errnum\n cannot be found"]
-    pub fn av_strerror(
-        errnum: ::std::os::raw::c_int,
-        errbuf: *mut ::std::os::raw::c_char,
-        errbuf_size: usize,
-    ) -> ::std::os::raw::c_int;
 }
 #[doc = " Rational number (pair of numerator and denominator)."]
 #[repr(C)]
@@ -9929,6 +10267,10 @@ extern "C" {
 extern "C" {
     #[doc = " Add a value to a timestamp.\n\n This function guarantees that when the same value is repeatly added that\n no accumulation of rounding errors occurs.\n\n @param[in] ts     Input timestamp\n @param[in] ts_tb  Input timestamp time base\n @param[in] inc    Value to be added\n @param[in] inc_tb Time base of `inc`"]
     pub fn av_add_stable(ts_tb: AVRational, ts: i64, inc_tb: AVRational, inc: i64) -> i64;
+}
+extern "C" {
+    #[doc = " 0th order modified bessel function of the first kind."]
+    pub fn av_bessel_i0(x: f64) -> f64;
 }
 pub type __gnuc_va_list = __builtin_va_list;
 pub const AVClassCategory_AV_CLASS_CATEGORY_NA: AVClassCategory = 0;
@@ -10667,8 +11009,20 @@ pub const AVPixelFormat_AV_PIX_FMT_RGBF32LE: AVPixelFormat = 219;
 pub const AVPixelFormat_AV_PIX_FMT_RGBAF32BE: AVPixelFormat = 220;
 #[doc = "< IEEE-754 single precision packed RGBA 32:32:32:32, 128bpp, RGBARGBA..., little-endian"]
 pub const AVPixelFormat_AV_PIX_FMT_RGBAF32LE: AVPixelFormat = 221;
+#[doc = "< interleaved chroma YUV 4:2:2, 24bpp, data in the high bits, big-endian"]
+pub const AVPixelFormat_AV_PIX_FMT_P212BE: AVPixelFormat = 222;
+#[doc = "< interleaved chroma YUV 4:2:2, 24bpp, data in the high bits, little-endian"]
+pub const AVPixelFormat_AV_PIX_FMT_P212LE: AVPixelFormat = 223;
+#[doc = "< interleaved chroma YUV 4:4:4, 36bpp, data in the high bits, big-endian"]
+pub const AVPixelFormat_AV_PIX_FMT_P412BE: AVPixelFormat = 224;
+#[doc = "< interleaved chroma YUV 4:4:4, 36bpp, data in the high bits, little-endian"]
+pub const AVPixelFormat_AV_PIX_FMT_P412LE: AVPixelFormat = 225;
+#[doc = "< planar GBR 4:4:4:4 56bpp, big-endian"]
+pub const AVPixelFormat_AV_PIX_FMT_GBRAP14BE: AVPixelFormat = 226;
+#[doc = "< planar GBR 4:4:4:4 56bpp, little-endian"]
+pub const AVPixelFormat_AV_PIX_FMT_GBRAP14LE: AVPixelFormat = 227;
 #[doc = "< number of pixel formats, DO NOT USE THIS if you want to link with shared libav* because the number of formats might differ between versions"]
-pub const AVPixelFormat_AV_PIX_FMT_NB: AVPixelFormat = 222;
+pub const AVPixelFormat_AV_PIX_FMT_NB: AVPixelFormat = 228;
 #[doc = " Pixel format.\n\n @note\n AV_PIX_FMT_RGB32 is handled in an endian-specific manner. An RGBA\n color is put together as:\n  (A << 24) | (R << 16) | (G << 8) | B\n This is stored as BGRA on little-endian CPU architectures and ARGB on\n big-endian CPUs.\n\n @note\n If the resolution is not a multiple of the chroma subsampling factor\n then the chroma plane resolution must be rounded up.\n\n @par\n When the pixel format is palettized RGB32 (AV_PIX_FMT_PAL8), the palettized\n image data is stored in AVFrame.data[0]. The palette is transported in\n AVFrame.data[1], is 1024 bytes long (256 4-byte entries) and is\n formatted the same as in AV_PIX_FMT_RGB32 described above (i.e., it is\n also endian-specific). Note also that the individual RGB32 palette\n components stored in AVFrame.data[1] should be in the range 0..255.\n This is important as many custom PAL8 video codecs that were designed\n to run on the IBM VGA graphics adapter use 6-bit palette components.\n\n @par\n For all the 8 bits per pixel formats, an RGB32 palette is in data[1] like\n for pal8. This palette is filled in automatically by the function\n allocating the picture."]
 pub type AVPixelFormat = ::std::os::raw::c_int;
 pub const AVColorPrimaries_AVCOL_PRI_RESERVED0: AVColorPrimaries = 0;
@@ -10982,122 +11336,6 @@ extern "C" {
     pub fn av_buffer_pool_buffer_get_opaque(
         ref_: *const AVBufferRef,
     ) -> *mut ::std::os::raw::c_void;
-}
-#[doc = " @}"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct AVDictionaryEntry {
-    pub key: *mut ::std::os::raw::c_char,
-    pub value: *mut ::std::os::raw::c_char,
-}
-#[test]
-fn bindgen_test_layout_AVDictionaryEntry() {
-    const UNINIT: ::std::mem::MaybeUninit<AVDictionaryEntry> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<AVDictionaryEntry>(),
-        16usize,
-        concat!("Size of: ", stringify!(AVDictionaryEntry))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<AVDictionaryEntry>(),
-        8usize,
-        concat!("Alignment of ", stringify!(AVDictionaryEntry))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).key) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVDictionaryEntry),
-            "::",
-            stringify!(key)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).value) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVDictionaryEntry),
-            "::",
-            stringify!(value)
-        )
-    );
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct AVDictionary {
-    _unused: [u8; 0],
-}
-extern "C" {
-    #[doc = " Get a dictionary entry with matching key.\n\n The returned entry key or value must not be changed, or it will\n cause undefined behavior.\n\n @param prev  Set to the previous matching element to find the next.\n              If set to NULL the first matching element is returned.\n @param key   Matching key\n @param flags A collection of AV_DICT_* flags controlling how the\n              entry is retrieved\n\n @return      Found entry or NULL in case no matching entry was found in the dictionary"]
-    pub fn av_dict_get(
-        m: *const AVDictionary,
-        key: *const ::std::os::raw::c_char,
-        prev: *const AVDictionaryEntry,
-        flags: ::std::os::raw::c_int,
-    ) -> *mut AVDictionaryEntry;
-}
-extern "C" {
-    #[doc = " Iterate over a dictionary\n\n Iterates through all entries in the dictionary.\n\n @warning The returned AVDictionaryEntry key/value must not be changed.\n\n @warning As av_dict_set() invalidates all previous entries returned\n by this function, it must not be called while iterating over the dict.\n\n Typical usage:\n @code\n const AVDictionaryEntry *e = NULL;\n while ((e = av_dict_iterate(m, e))) {\n     // ...\n }\n @endcode\n\n @param m     The dictionary to iterate over\n @param prev  Pointer to the previous AVDictionaryEntry, NULL initially\n\n @retval AVDictionaryEntry* The next element in the dictionary\n @retval NULL               No more elements in the dictionary"]
-    pub fn av_dict_iterate(
-        m: *const AVDictionary,
-        prev: *const AVDictionaryEntry,
-    ) -> *const AVDictionaryEntry;
-}
-extern "C" {
-    #[doc = " Get number of entries in dictionary.\n\n @param m dictionary\n @return  number of entries in dictionary"]
-    pub fn av_dict_count(m: *const AVDictionary) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " Set the given entry in *pm, overwriting an existing entry.\n\n Note: If AV_DICT_DONT_STRDUP_KEY or AV_DICT_DONT_STRDUP_VAL is set,\n these arguments will be freed on error.\n\n @warning Adding a new entry to a dictionary invalidates all existing entries\n previously returned with av_dict_get() or av_dict_iterate().\n\n @param pm        Pointer to a pointer to a dictionary struct. If *pm is NULL\n                  a dictionary struct is allocated and put in *pm.\n @param key       Entry key to add to *pm (will either be av_strduped or added as a new key depending on flags)\n @param value     Entry value to add to *pm (will be av_strduped or added as a new key depending on flags).\n                  Passing a NULL value will cause an existing entry to be deleted.\n\n @return          >= 0 on success otherwise an error code <0"]
-    pub fn av_dict_set(
-        pm: *mut *mut AVDictionary,
-        key: *const ::std::os::raw::c_char,
-        value: *const ::std::os::raw::c_char,
-        flags: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " Convenience wrapper for av_dict_set() that converts the value to a string\n and stores it.\n\n Note: If ::AV_DICT_DONT_STRDUP_KEY is set, key will be freed on error."]
-    pub fn av_dict_set_int(
-        pm: *mut *mut AVDictionary,
-        key: *const ::std::os::raw::c_char,
-        value: i64,
-        flags: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " Parse the key/value pairs list and add the parsed entries to a dictionary.\n\n In case of failure, all the successfully set entries are stored in\n *pm. You may need to manually free the created dictionary.\n\n @param key_val_sep  A 0-terminated list of characters used to separate\n                     key from value\n @param pairs_sep    A 0-terminated list of characters used to separate\n                     two pairs from each other\n @param flags        Flags to use when adding to the dictionary.\n                     ::AV_DICT_DONT_STRDUP_KEY and ::AV_DICT_DONT_STRDUP_VAL\n                     are ignored since the key/value tokens will always\n                     be duplicated.\n\n @return             0 on success, negative AVERROR code on failure"]
-    pub fn av_dict_parse_string(
-        pm: *mut *mut AVDictionary,
-        str_: *const ::std::os::raw::c_char,
-        key_val_sep: *const ::std::os::raw::c_char,
-        pairs_sep: *const ::std::os::raw::c_char,
-        flags: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " Copy entries from one AVDictionary struct into another.\n\n @note Metadata is read using the ::AV_DICT_IGNORE_SUFFIX flag\n\n @param dst   Pointer to a pointer to a AVDictionary struct to copy into. If *dst is NULL,\n              this function will allocate a struct for you and put it in *dst\n @param src   Pointer to the source AVDictionary struct to copy items from.\n @param flags Flags to use when setting entries in *dst\n\n @return 0 on success, negative AVERROR code on failure. If dst was allocated\n           by this function, callers should free the associated memory."]
-    pub fn av_dict_copy(
-        dst: *mut *mut AVDictionary,
-        src: *const AVDictionary,
-        flags: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " Free all the memory allocated for an AVDictionary struct\n and all keys and values."]
-    pub fn av_dict_free(m: *mut *mut AVDictionary);
-}
-extern "C" {
-    #[doc = " Get dictionary entries as a string.\n\n Create a string containing dictionary's entries.\n Such string may be passed back to av_dict_parse_string().\n @note String is escaped with backslashes ('\\').\n\n @warning Separators cannot be neither '\\\\' nor '\\0'. They also cannot be the same.\n\n @param[in]  m             The dictionary\n @param[out] buffer        Pointer to buffer that will be allocated with string containg entries.\n                           Buffer must be freed by the caller when is no longer needed.\n @param[in]  key_val_sep   Character used to separate key from value\n @param[in]  pairs_sep     Character used to separate two pairs from each other\n\n @return                   >= 0 on success, negative on error"]
-    pub fn av_dict_get_string(
-        m: *const AVDictionary,
-        buffer: *mut *mut ::std::os::raw::c_char,
-        key_val_sep: ::std::os::raw::c_char,
-        pairs_sep: ::std::os::raw::c_char,
-    ) -> ::std::os::raw::c_int;
 }
 pub const AVChannel_AV_CHAN_NONE: AVChannel = -1;
 pub const AVChannel_AV_CHAN_FRONT_LEFT: AVChannel = 0;
@@ -11541,6 +11779,122 @@ extern "C" {
         chl1: *const AVChannelLayout,
     ) -> ::std::os::raw::c_int;
 }
+#[doc = " @}"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct AVDictionaryEntry {
+    pub key: *mut ::std::os::raw::c_char,
+    pub value: *mut ::std::os::raw::c_char,
+}
+#[test]
+fn bindgen_test_layout_AVDictionaryEntry() {
+    const UNINIT: ::std::mem::MaybeUninit<AVDictionaryEntry> = ::std::mem::MaybeUninit::uninit();
+    let ptr = UNINIT.as_ptr();
+    assert_eq!(
+        ::std::mem::size_of::<AVDictionaryEntry>(),
+        16usize,
+        concat!("Size of: ", stringify!(AVDictionaryEntry))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<AVDictionaryEntry>(),
+        8usize,
+        concat!("Alignment of ", stringify!(AVDictionaryEntry))
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).key) as usize - ptr as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVDictionaryEntry),
+            "::",
+            stringify!(key)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).value) as usize - ptr as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVDictionaryEntry),
+            "::",
+            stringify!(value)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct AVDictionary {
+    _unused: [u8; 0],
+}
+extern "C" {
+    #[doc = " Get a dictionary entry with matching key.\n\n The returned entry key or value must not be changed, or it will\n cause undefined behavior.\n\n @param prev  Set to the previous matching element to find the next.\n              If set to NULL the first matching element is returned.\n @param key   Matching key\n @param flags A collection of AV_DICT_* flags controlling how the\n              entry is retrieved\n\n @return      Found entry or NULL in case no matching entry was found in the dictionary"]
+    pub fn av_dict_get(
+        m: *const AVDictionary,
+        key: *const ::std::os::raw::c_char,
+        prev: *const AVDictionaryEntry,
+        flags: ::std::os::raw::c_int,
+    ) -> *mut AVDictionaryEntry;
+}
+extern "C" {
+    #[doc = " Iterate over a dictionary\n\n Iterates through all entries in the dictionary.\n\n @warning The returned AVDictionaryEntry key/value must not be changed.\n\n @warning As av_dict_set() invalidates all previous entries returned\n by this function, it must not be called while iterating over the dict.\n\n Typical usage:\n @code\n const AVDictionaryEntry *e = NULL;\n while ((e = av_dict_iterate(m, e))) {\n     // ...\n }\n @endcode\n\n @param m     The dictionary to iterate over\n @param prev  Pointer to the previous AVDictionaryEntry, NULL initially\n\n @retval AVDictionaryEntry* The next element in the dictionary\n @retval NULL               No more elements in the dictionary"]
+    pub fn av_dict_iterate(
+        m: *const AVDictionary,
+        prev: *const AVDictionaryEntry,
+    ) -> *const AVDictionaryEntry;
+}
+extern "C" {
+    #[doc = " Get number of entries in dictionary.\n\n @param m dictionary\n @return  number of entries in dictionary"]
+    pub fn av_dict_count(m: *const AVDictionary) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    #[doc = " Set the given entry in *pm, overwriting an existing entry.\n\n Note: If AV_DICT_DONT_STRDUP_KEY or AV_DICT_DONT_STRDUP_VAL is set,\n these arguments will be freed on error.\n\n @warning Adding a new entry to a dictionary invalidates all existing entries\n previously returned with av_dict_get() or av_dict_iterate().\n\n @param pm        Pointer to a pointer to a dictionary struct. If *pm is NULL\n                  a dictionary struct is allocated and put in *pm.\n @param key       Entry key to add to *pm (will either be av_strduped or added as a new key depending on flags)\n @param value     Entry value to add to *pm (will be av_strduped or added as a new key depending on flags).\n                  Passing a NULL value will cause an existing entry to be deleted.\n\n @return          >= 0 on success otherwise an error code <0"]
+    pub fn av_dict_set(
+        pm: *mut *mut AVDictionary,
+        key: *const ::std::os::raw::c_char,
+        value: *const ::std::os::raw::c_char,
+        flags: ::std::os::raw::c_int,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    #[doc = " Convenience wrapper for av_dict_set() that converts the value to a string\n and stores it.\n\n Note: If ::AV_DICT_DONT_STRDUP_KEY is set, key will be freed on error."]
+    pub fn av_dict_set_int(
+        pm: *mut *mut AVDictionary,
+        key: *const ::std::os::raw::c_char,
+        value: i64,
+        flags: ::std::os::raw::c_int,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    #[doc = " Parse the key/value pairs list and add the parsed entries to a dictionary.\n\n In case of failure, all the successfully set entries are stored in\n *pm. You may need to manually free the created dictionary.\n\n @param key_val_sep  A 0-terminated list of characters used to separate\n                     key from value\n @param pairs_sep    A 0-terminated list of characters used to separate\n                     two pairs from each other\n @param flags        Flags to use when adding to the dictionary.\n                     ::AV_DICT_DONT_STRDUP_KEY and ::AV_DICT_DONT_STRDUP_VAL\n                     are ignored since the key/value tokens will always\n                     be duplicated.\n\n @return             0 on success, negative AVERROR code on failure"]
+    pub fn av_dict_parse_string(
+        pm: *mut *mut AVDictionary,
+        str_: *const ::std::os::raw::c_char,
+        key_val_sep: *const ::std::os::raw::c_char,
+        pairs_sep: *const ::std::os::raw::c_char,
+        flags: ::std::os::raw::c_int,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    #[doc = " Copy entries from one AVDictionary struct into another.\n\n @note Metadata is read using the ::AV_DICT_IGNORE_SUFFIX flag\n\n @param dst   Pointer to a pointer to a AVDictionary struct to copy into. If *dst is NULL,\n              this function will allocate a struct for you and put it in *dst\n @param src   Pointer to the source AVDictionary struct to copy items from.\n @param flags Flags to use when setting entries in *dst\n\n @return 0 on success, negative AVERROR code on failure. If dst was allocated\n           by this function, callers should free the associated memory."]
+    pub fn av_dict_copy(
+        dst: *mut *mut AVDictionary,
+        src: *const AVDictionary,
+        flags: ::std::os::raw::c_int,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    #[doc = " Free all the memory allocated for an AVDictionary struct\n and all keys and values."]
+    pub fn av_dict_free(m: *mut *mut AVDictionary);
+}
+extern "C" {
+    #[doc = " Get dictionary entries as a string.\n\n Create a string containing dictionary's entries.\n Such string may be passed back to av_dict_parse_string().\n @note String is escaped with backslashes ('\\').\n\n @warning Separators cannot be neither '\\\\' nor '\\0'. They also cannot be the same.\n\n @param[in]  m             The dictionary\n @param[out] buffer        Pointer to buffer that will be allocated with string containg entries.\n                           Buffer must be freed by the caller when is no longer needed.\n @param[in]  key_val_sep   Character used to separate key from value\n @param[in]  pairs_sep     Character used to separate two pairs from each other\n\n @return                   >= 0 on success, negative on error"]
+    pub fn av_dict_get_string(
+        m: *const AVDictionary,
+        buffer: *mut *mut ::std::os::raw::c_char,
+        key_val_sep: ::std::os::raw::c_char,
+        pairs_sep: ::std::os::raw::c_char,
+    ) -> ::std::os::raw::c_int;
+}
 #[doc = " The data is the AVPanScan struct defined in libavcodec."]
 pub const AVFrameSideDataType_AV_FRAME_DATA_PANSCAN: AVFrameSideDataType = 0;
 #[doc = " ATSC A53 Part 4 Closed Captions.\n A53 CC bitstream is stored as uint8_t in AVFrameSideData.data.\n The number of bytes of CC data is AVFrameSideData.size."]
@@ -11595,6 +11949,8 @@ pub const AVFrameSideDataType_AV_FRAME_DATA_DOVI_METADATA: AVFrameSideDataType =
 pub const AVFrameSideDataType_AV_FRAME_DATA_DYNAMIC_HDR_VIVID: AVFrameSideDataType = 25;
 #[doc = " Ambient viewing environment metadata, as defined by H.274."]
 pub const AVFrameSideDataType_AV_FRAME_DATA_AMBIENT_VIEWING_ENVIRONMENT: AVFrameSideDataType = 26;
+#[doc = " Provide encoder-specific hinting information about changed/unchanged\n portions of a frame.  It can be used to pass information about which\n macroblocks can be skipped because they didn't change from the\n corresponding ones in the previous frame. This could be useful for\n applications which know this information in advance to speed up\n encoding."]
+pub const AVFrameSideDataType_AV_FRAME_DATA_VIDEO_HINT: AVFrameSideDataType = 27;
 #[doc = " @defgroup lavu_frame AVFrame\n @ingroup lavu_data\n\n @{\n AVFrame is an abstraction for reference-counted raw multimedia data."]
 pub type AVFrameSideDataType = ::std::os::raw::c_uint;
 pub const AVActiveFormatDescription_AV_AFD_SAME: AVActiveFormatDescription = 8;
@@ -11787,7 +12143,7 @@ pub struct AVFrame {
     pub nb_samples: ::std::os::raw::c_int,
     #[doc = " format of the frame, -1 if unknown or unset\n Values correspond to enum AVPixelFormat for video frames,\n enum AVSampleFormat for audio)"]
     pub format: ::std::os::raw::c_int,
-    #[doc = " 1 -> keyframe, 0-> not"]
+    #[doc = " 1 -> keyframe, 0-> not\n\n @deprecated Use AV_FRAME_FLAG_KEY instead"]
     pub key_frame: ::std::os::raw::c_int,
     #[doc = " Picture type of the frame."]
     pub pict_type: AVPictureType,
@@ -11805,13 +12161,13 @@ pub struct AVFrame {
     pub display_picture_number: ::std::os::raw::c_int,
     #[doc = " quality (between 1 (good) and FF_LAMBDA_MAX (bad))"]
     pub quality: ::std::os::raw::c_int,
-    #[doc = " for some private data of the user"]
+    #[doc = " Frame owner's private data.\n\n This field may be set by the code that allocates/owns the frame data.\n It is then not touched by any library functions, except:\n - it is copied to other references by av_frame_copy_props() (and hence by\n   av_frame_ref());\n - it is set to NULL when the frame is cleared by av_frame_unref()\n - on the caller's explicit request. E.g. libavcodec encoders/decoders\n   will copy this field to/from @ref AVPacket \"AVPackets\" if the caller sets\n   @ref AV_CODEC_FLAG_COPY_OPAQUE.\n\n @see opaque_ref the reference-counted analogue"]
     pub opaque: *mut ::std::os::raw::c_void,
-    #[doc = " When decoding, this signals how much the picture must be delayed.\n extra_delay = repeat_pict / (2*fps)"]
+    #[doc = " Number of fields in this frame which should be repeated, i.e. the total\n duration of this frame should be repeat_pict + 2 normal field durations.\n\n For interlaced frames this field may be set to 1, which signals that this\n frame should be presented as 3 fields: beginning with the first field (as\n determined by AV_FRAME_FLAG_TOP_FIELD_FIRST being set or not), followed\n by the second field, and then the first field again.\n\n For progressive frames this field may be set to a multiple of 2, which\n signals that this frame's duration should be (repeat_pict + 2) / 2\n normal frame durations.\n\n @note This field is computed from MPEG2 repeat_first_field flag and its\n associated flags, H.264 pic_struct from picture timing SEI, and\n their analogues in other codecs. Typically it should only be used when\n higher-layer timing information is not available."]
     pub repeat_pict: ::std::os::raw::c_int,
-    #[doc = " The content of the picture is interlaced."]
+    #[doc = " The content of the picture is interlaced.\n\n @deprecated Use AV_FRAME_FLAG_INTERLACED instead"]
     pub interlaced_frame: ::std::os::raw::c_int,
-    #[doc = " If the content is interlaced, is top field displayed first."]
+    #[doc = " If the content is interlaced, is top field displayed first.\n\n @deprecated Use AV_FRAME_FLAG_TOP_FIELD_FIRST instead"]
     pub top_field_first: ::std::os::raw::c_int,
     #[doc = " Tell user application that palette has changed from previous frame."]
     pub palette_has_changed: ::std::os::raw::c_int,
@@ -11840,7 +12196,7 @@ pub struct AVFrame {
     pub chroma_location: AVChromaLocation,
     #[doc = " frame timestamp estimated using various heuristics, in stream time base\n - encoding: unused\n - decoding: set by libavcodec, read by user."]
     pub best_effort_timestamp: i64,
-    #[doc = " reordered pos from the last AVPacket that has been input into the decoder\n - encoding: unused\n - decoding: Read by user."]
+    #[doc = " reordered pos from the last AVPacket that has been input into the decoder\n - encoding: unused\n - decoding: Read by user.\n @deprecated use AV_CODEC_FLAG_COPY_OPAQUE to pass through arbitrary user\n             data from packets to frames"]
     pub pkt_pos: i64,
     #[doc = " duration of the corresponding packet, expressed in\n AVStream->time_base units, 0 if unknown.\n - encoding: unused\n - decoding: Read by user.\n\n @deprecated use duration instead"]
     pub pkt_duration: i64,
@@ -11850,11 +12206,11 @@ pub struct AVFrame {
     pub decode_error_flags: ::std::os::raw::c_int,
     #[doc = " number of audio channels, only used for audio.\n - encoding: unused\n - decoding: Read by user.\n @deprecated use ch_layout instead"]
     pub channels: ::std::os::raw::c_int,
-    #[doc = " size of the corresponding packet containing the compressed\n frame.\n It is set to a negative value if unknown.\n - encoding: unused\n - decoding: set by libavcodec, read by user."]
+    #[doc = " size of the corresponding packet containing the compressed\n frame.\n It is set to a negative value if unknown.\n - encoding: unused\n - decoding: set by libavcodec, read by user.\n @deprecated use AV_CODEC_FLAG_COPY_OPAQUE to pass through arbitrary user\n             data from packets to frames"]
     pub pkt_size: ::std::os::raw::c_int,
     #[doc = " For hwaccel-format frames, this should be a reference to the\n AVHWFramesContext describing the frame."]
     pub hw_frames_ctx: *mut AVBufferRef,
-    #[doc = " AVBufferRef for free use by the API user. FFmpeg will never check the\n contents of the buffer ref. FFmpeg calls av_buffer_unref() on it when\n the frame is unreferenced. av_frame_copy_props() calls create a new\n reference with av_buffer_ref() for the target frame's opaque_ref field.\n\n This is unrelated to the opaque field, although it serves a similar\n purpose."]
+    #[doc = " Frame owner's private data.\n\n This field may be set by the code that allocates/owns the frame data.\n It is then not touched by any library functions, except:\n - a new reference to the underlying buffer is propagated by\n   av_frame_copy_props() (and hence by av_frame_ref());\n - it is unreferenced in av_frame_unref();\n - on the caller's explicit request. E.g. libavcodec encoders/decoders\n   will propagate a new reference to/from @ref AVPacket \"AVPackets\" if the\n   caller sets @ref AV_CODEC_FLAG_COPY_OPAQUE.\n\n @see opaque the plain pointer analogue"]
     pub opaque_ref: *mut AVBufferRef,
     #[doc = " @anchor cropping\n @name Cropping\n Video frames only. The number of pixels to discard from the the\n top/bottom/left/right border of the frame to obtain the sub-rectangle of\n the frame intended for presentation.\n @{"]
     pub crop_top: usize,
@@ -12411,6 +12767,10 @@ extern "C" {
     pub fn av_frame_ref(dst: *mut AVFrame, src: *const AVFrame) -> ::std::os::raw::c_int;
 }
 extern "C" {
+    #[doc = " Ensure the destination frame refers to the same data described by the source\n frame, either by creating a new reference for each AVBufferRef from src if\n they differ from those in dst, by allocating new buffers and copying data if\n src is not reference counted, or by unrefencing it if src is empty.\n\n Frame properties on dst will be replaced by those from src.\n\n @return 0 on success, a negative AVERROR on error. On error, dst is\n         unreferenced."]
+    pub fn av_frame_replace(dst: *mut AVFrame, src: *const AVFrame) -> ::std::os::raw::c_int;
+}
+extern "C" {
     #[doc = " Create a new frame that references the same data as src.\n\n This is a shortcut for av_frame_alloc()+av_frame_ref().\n\n @return newly created AVFrame on success, NULL on error."]
     pub fn av_frame_clone(src: *const AVFrame) -> *mut AVFrame;
 }
@@ -12448,7 +12808,7 @@ extern "C" {
 extern "C" {
     #[doc = " Get the buffer reference a given data plane is stored in.\n\n @param frame the frame to get the plane's buffer from\n @param plane index of the data plane of interest in frame->extended_data.\n\n @return the buffer reference that contains the plane or NULL if the input\n frame is not valid."]
     pub fn av_frame_get_plane_buffer(
-        frame: *mut AVFrame,
+        frame: *const AVFrame,
         plane: ::std::os::raw::c_int,
     ) -> *mut AVBufferRef;
 }
@@ -13275,6 +13635,10 @@ pub const AVCodecID_AV_CODEC_ID_RADIANCE_HDR: AVCodecID = 262;
 pub const AVCodecID_AV_CODEC_ID_WBMP: AVCodecID = 263;
 pub const AVCodecID_AV_CODEC_ID_MEDIA100: AVCodecID = 264;
 pub const AVCodecID_AV_CODEC_ID_VQC: AVCodecID = 265;
+pub const AVCodecID_AV_CODEC_ID_PDV: AVCodecID = 266;
+pub const AVCodecID_AV_CODEC_ID_EVC: AVCodecID = 267;
+pub const AVCodecID_AV_CODEC_ID_RTV1: AVCodecID = 268;
+pub const AVCodecID_AV_CODEC_ID_VMIX: AVCodecID = 269;
 #[doc = "< A dummy id pointing at the start of audio codecs"]
 pub const AVCodecID_AV_CODEC_ID_FIRST_AUDIO: AVCodecID = 65536;
 pub const AVCodecID_AV_CODEC_ID_PCM_S16LE: AVCodecID = 65536;
@@ -13484,6 +13848,8 @@ pub const AVCodecID_AV_CODEC_ID_APAC: AVCodecID = 86115;
 pub const AVCodecID_AV_CODEC_ID_FTR: AVCodecID = 86116;
 pub const AVCodecID_AV_CODEC_ID_WAVARC: AVCodecID = 86117;
 pub const AVCodecID_AV_CODEC_ID_RKA: AVCodecID = 86118;
+pub const AVCodecID_AV_CODEC_ID_AC4: AVCodecID = 86119;
+pub const AVCodecID_AV_CODEC_ID_OSQ: AVCodecID = 86120;
 #[doc = "< A dummy ID pointing at the start of subtitle codecs."]
 pub const AVCodecID_AV_CODEC_ID_FIRST_SUBTITLE: AVCodecID = 94208;
 pub const AVCodecID_AV_CODEC_ID_DVD_SUBTITLE: AVCodecID = 94208;
@@ -13527,6 +13893,7 @@ pub const AVCodecID_AV_CODEC_ID_SMPTE_KLV: AVCodecID = 98311;
 pub const AVCodecID_AV_CODEC_ID_DVD_NAV: AVCodecID = 98312;
 pub const AVCodecID_AV_CODEC_ID_TIMED_ID3: AVCodecID = 98313;
 pub const AVCodecID_AV_CODEC_ID_BIN_DATA: AVCodecID = 98314;
+pub const AVCodecID_AV_CODEC_ID_SMPTE_2038: AVCodecID = 98315;
 #[doc = "< codec_id is not known (like AV_CODEC_ID_NONE) but lavf should attempt to identify it"]
 pub const AVCodecID_AV_CODEC_ID_PROBE: AVCodecID = 102400;
 #[doc = "< _FAKE_ codec to indicate a raw MPEG-2 TS\n stream (only used by libavformat)"]
@@ -13639,7 +14006,7 @@ pub struct AVCodec {
     pub channel_layouts: *const u64,
     #[doc = "< AVClass for the private context"]
     pub priv_class: *const AVClass,
-    #[doc = "< array of recognized profiles, or NULL if unknown, array is terminated by {FF_PROFILE_UNKNOWN}"]
+    #[doc = "< array of recognized profiles, or NULL if unknown, array is terminated by {AV_PROFILE_UNKNOWN}"]
     pub profiles: *const AVProfile,
     #[doc = " Group name of the codec implementation.\n This is a short symbolic name of the wrapper backing this codec. A\n wrapper uses some kind of external implementation for the codec, such\n as an external library, or a codec implementation provided by the OS or\n the hardware.\n If this field is NULL, this is a builtin, libavcodec native codec.\n If non-NULL, this will be the suffix in AVCodec.name in most cases\n (usually AVCodec.name will be of the form \"<codec_name>_<wrapper_name>\")."]
     pub wrapper_name: *const ::std::os::raw::c_char,
@@ -13917,122 +14284,6 @@ extern "C" {
         index: ::std::os::raw::c_int,
     ) -> *const AVCodecHWConfig;
 }
-#[doc = " This struct describes the properties of a single codec described by an\n AVCodecID.\n @see avcodec_descriptor_get()"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct AVCodecDescriptor {
-    pub id: AVCodecID,
-    pub type_: AVMediaType,
-    #[doc = " Name of the codec described by this descriptor. It is non-empty and\n unique for each codec descriptor. It should contain alphanumeric\n characters and '_' only."]
-    pub name: *const ::std::os::raw::c_char,
-    #[doc = " A more descriptive name for this codec. May be NULL."]
-    pub long_name: *const ::std::os::raw::c_char,
-    #[doc = " Codec properties, a combination of AV_CODEC_PROP_* flags."]
-    pub props: ::std::os::raw::c_int,
-    #[doc = " MIME type(s) associated with the codec.\n May be NULL; if not, a NULL-terminated array of MIME types.\n The first item is always non-NULL and is the preferred MIME type."]
-    pub mime_types: *const *const ::std::os::raw::c_char,
-    #[doc = " If non-NULL, an array of profiles recognized for this codec.\n Terminated with FF_PROFILE_UNKNOWN."]
-    pub profiles: *const AVProfile,
-}
-#[test]
-fn bindgen_test_layout_AVCodecDescriptor() {
-    const UNINIT: ::std::mem::MaybeUninit<AVCodecDescriptor> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<AVCodecDescriptor>(),
-        48usize,
-        concat!("Size of: ", stringify!(AVCodecDescriptor))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<AVCodecDescriptor>(),
-        8usize,
-        concat!("Alignment of ", stringify!(AVCodecDescriptor))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).id) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecDescriptor),
-            "::",
-            stringify!(id)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).type_) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecDescriptor),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).name) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecDescriptor),
-            "::",
-            stringify!(name)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).long_name) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecDescriptor),
-            "::",
-            stringify!(long_name)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).props) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecDescriptor),
-            "::",
-            stringify!(props)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).mime_types) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecDescriptor),
-            "::",
-            stringify!(mime_types)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).profiles) as usize - ptr as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecDescriptor),
-            "::",
-            stringify!(profiles)
-        )
-    );
-}
-extern "C" {
-    #[doc = " @return descriptor for given codec ID or NULL if no descriptor exists."]
-    pub fn avcodec_descriptor_get(id: AVCodecID) -> *const AVCodecDescriptor;
-}
-extern "C" {
-    #[doc = " Iterate over all codec descriptors known to libavcodec.\n\n @param prev previous descriptor. NULL to get the first descriptor.\n\n @return next descriptor or NULL after the last descriptor"]
-    pub fn avcodec_descriptor_next(prev: *const AVCodecDescriptor) -> *const AVCodecDescriptor;
-}
-extern "C" {
-    #[doc = " @return codec descriptor with the given name or NULL if no such descriptor\n         exists."]
-    pub fn avcodec_descriptor_get_by_name(
-        name: *const ::std::os::raw::c_char,
-    ) -> *const AVCodecDescriptor;
-}
 pub const AVFieldOrder_AV_FIELD_UNKNOWN: AVFieldOrder = 0;
 pub const AVFieldOrder_AV_FIELD_PROGRESSIVE: AVFieldOrder = 1;
 #[doc = "< Top coded_first, top displayed first"]
@@ -14043,409 +14294,7 @@ pub const AVFieldOrder_AV_FIELD_BB: AVFieldOrder = 3;
 pub const AVFieldOrder_AV_FIELD_TB: AVFieldOrder = 4;
 #[doc = "< Bottom coded first, top displayed first"]
 pub const AVFieldOrder_AV_FIELD_BT: AVFieldOrder = 5;
-#[doc = " @addtogroup lavc_core\n @{"]
 pub type AVFieldOrder = ::std::os::raw::c_uint;
-#[doc = " This struct describes the properties of an encoded stream.\n\n sizeof(AVCodecParameters) is not a part of the public ABI, this struct must\n be allocated with avcodec_parameters_alloc() and freed with\n avcodec_parameters_free()."]
-#[repr(C)]
-#[derive(Copy, Clone)]
-pub struct AVCodecParameters {
-    #[doc = " General type of the encoded data."]
-    pub codec_type: AVMediaType,
-    #[doc = " Specific type of the encoded data (the codec used)."]
-    pub codec_id: AVCodecID,
-    #[doc = " Additional information about the codec (corresponds to the AVI FOURCC)."]
-    pub codec_tag: u32,
-    #[doc = " Extra binary data needed for initializing the decoder, codec-dependent.\n\n Must be allocated with av_malloc() and will be freed by\n avcodec_parameters_free(). The allocated size of extradata must be at\n least extradata_size + AV_INPUT_BUFFER_PADDING_SIZE, with the padding\n bytes zeroed."]
-    pub extradata: *mut u8,
-    #[doc = " Size of the extradata content in bytes."]
-    pub extradata_size: ::std::os::raw::c_int,
-    #[doc = " - video: the pixel format, the value corresponds to enum AVPixelFormat.\n - audio: the sample format, the value corresponds to enum AVSampleFormat."]
-    pub format: ::std::os::raw::c_int,
-    #[doc = " The average bitrate of the encoded data (in bits per second)."]
-    pub bit_rate: i64,
-    #[doc = " The number of bits per sample in the codedwords.\n\n This is basically the bitrate per sample. It is mandatory for a bunch of\n formats to actually decode them. It's the number of bits for one sample in\n the actual coded bitstream.\n\n This could be for example 4 for ADPCM\n For PCM formats this matches bits_per_raw_sample\n Can be 0"]
-    pub bits_per_coded_sample: ::std::os::raw::c_int,
-    #[doc = " This is the number of valid bits in each output sample. If the\n sample format has more bits, the least significant bits are additional\n padding bits, which are always 0. Use right shifts to reduce the sample\n to its actual size. For example, audio formats with 24 bit samples will\n have bits_per_raw_sample set to 24, and format set to AV_SAMPLE_FMT_S32.\n To get the original sample use \"(int32_t)sample >> 8\".\"\n\n For ADPCM this might be 12 or 16 or similar\n Can be 0"]
-    pub bits_per_raw_sample: ::std::os::raw::c_int,
-    #[doc = " Codec-specific bitstream restrictions that the stream conforms to."]
-    pub profile: ::std::os::raw::c_int,
-    pub level: ::std::os::raw::c_int,
-    #[doc = " Video only. The dimensions of the video frame in pixels."]
-    pub width: ::std::os::raw::c_int,
-    pub height: ::std::os::raw::c_int,
-    #[doc = " Video only. The aspect ratio (width / height) which a single pixel\n should have when displayed.\n\n When the aspect ratio is unknown / undefined, the numerator should be\n set to 0 (the denominator may have any value)."]
-    pub sample_aspect_ratio: AVRational,
-    #[doc = " Video only. The order of the fields in interlaced video."]
-    pub field_order: AVFieldOrder,
-    #[doc = " Video only. Additional colorspace characteristics."]
-    pub color_range: AVColorRange,
-    pub color_primaries: AVColorPrimaries,
-    pub color_trc: AVColorTransferCharacteristic,
-    pub color_space: AVColorSpace,
-    pub chroma_location: AVChromaLocation,
-    #[doc = " Video only. Number of delayed frames."]
-    pub video_delay: ::std::os::raw::c_int,
-    #[doc = " Audio only. The channel layout bitmask. May be 0 if the channel layout is\n unknown or unspecified, otherwise the number of bits set must be equal to\n the channels field.\n @deprecated use ch_layout"]
-    pub channel_layout: u64,
-    #[doc = " Audio only. The number of audio channels.\n @deprecated use ch_layout.nb_channels"]
-    pub channels: ::std::os::raw::c_int,
-    #[doc = " Audio only. The number of audio samples per second."]
-    pub sample_rate: ::std::os::raw::c_int,
-    #[doc = " Audio only. The number of bytes per coded audio frame, required by some\n formats.\n\n Corresponds to nBlockAlign in WAVEFORMATEX."]
-    pub block_align: ::std::os::raw::c_int,
-    #[doc = " Audio only. Audio frame size, if known. Required by some formats to be static."]
-    pub frame_size: ::std::os::raw::c_int,
-    #[doc = " Audio only. The amount of padding (in samples) inserted by the encoder at\n the beginning of the audio. I.e. this number of leading decoded samples\n must be discarded by the caller to get the original audio without leading\n padding."]
-    pub initial_padding: ::std::os::raw::c_int,
-    #[doc = " Audio only. The amount of padding (in samples) appended by the encoder to\n the end of the audio. I.e. this number of decoded samples must be\n discarded by the caller from the end of the stream to get the original\n audio without any trailing padding."]
-    pub trailing_padding: ::std::os::raw::c_int,
-    #[doc = " Audio only. Number of samples to skip after a discontinuity."]
-    pub seek_preroll: ::std::os::raw::c_int,
-    #[doc = " Audio only. The channel layout and number of channels."]
-    pub ch_layout: AVChannelLayout,
-}
-#[test]
-fn bindgen_test_layout_AVCodecParameters() {
-    const UNINIT: ::std::mem::MaybeUninit<AVCodecParameters> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<AVCodecParameters>(),
-        168usize,
-        concat!("Size of: ", stringify!(AVCodecParameters))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<AVCodecParameters>(),
-        8usize,
-        concat!("Alignment of ", stringify!(AVCodecParameters))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).codec_type) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(codec_type)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).codec_id) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(codec_id)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).codec_tag) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(codec_tag)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).extradata) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(extradata)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).extradata_size) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(extradata_size)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).format) as usize - ptr as usize },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(format)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bit_rate) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(bit_rate)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bits_per_coded_sample) as usize - ptr as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(bits_per_coded_sample)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bits_per_raw_sample) as usize - ptr as usize },
-        44usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(bits_per_raw_sample)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).profile) as usize - ptr as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(profile)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).level) as usize - ptr as usize },
-        52usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(level)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).width) as usize - ptr as usize },
-        56usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(width)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).height) as usize - ptr as usize },
-        60usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(height)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).sample_aspect_ratio) as usize - ptr as usize },
-        64usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(sample_aspect_ratio)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).field_order) as usize - ptr as usize },
-        72usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(field_order)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).color_range) as usize - ptr as usize },
-        76usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(color_range)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).color_primaries) as usize - ptr as usize },
-        80usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(color_primaries)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).color_trc) as usize - ptr as usize },
-        84usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(color_trc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).color_space) as usize - ptr as usize },
-        88usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(color_space)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).chroma_location) as usize - ptr as usize },
-        92usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(chroma_location)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).video_delay) as usize - ptr as usize },
-        96usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(video_delay)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).channel_layout) as usize - ptr as usize },
-        104usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(channel_layout)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).channels) as usize - ptr as usize },
-        112usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(channels)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).sample_rate) as usize - ptr as usize },
-        116usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(sample_rate)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).block_align) as usize - ptr as usize },
-        120usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(block_align)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).frame_size) as usize - ptr as usize },
-        124usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(frame_size)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).initial_padding) as usize - ptr as usize },
-        128usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(initial_padding)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).trailing_padding) as usize - ptr as usize },
-        132usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(trailing_padding)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).seek_preroll) as usize - ptr as usize },
-        136usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(seek_preroll)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).ch_layout) as usize - ptr as usize },
-        144usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVCodecParameters),
-            "::",
-            stringify!(ch_layout)
-        )
-    );
-}
-impl ::std::fmt::Debug for AVCodecParameters {
-    fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
-        write ! (f , "AVCodecParameters {{ codec_type: {:?}, codec_id: {:?}, codec_tag: {:?}, extradata: {:?}, extradata_size: {:?}, format: {:?}, bit_rate: {:?}, bits_per_coded_sample: {:?}, bits_per_raw_sample: {:?}, profile: {:?}, level: {:?}, width: {:?}, height: {:?}, sample_aspect_ratio: {:?}, field_order: {:?}, color_range: {:?}, color_primaries: {:?}, color_trc: {:?}, color_space: {:?}, chroma_location: {:?}, video_delay: {:?}, channel_layout: {:?}, channels: {:?}, sample_rate: {:?}, block_align: {:?}, frame_size: {:?}, initial_padding: {:?}, trailing_padding: {:?}, seek_preroll: {:?}, ch_layout: {:?} }}" , self . codec_type , self . codec_id , self . codec_tag , self . extradata , self . extradata_size , self . format , self . bit_rate , self . bits_per_coded_sample , self . bits_per_raw_sample , self . profile , self . level , self . width , self . height , self . sample_aspect_ratio , self . field_order , self . color_range , self . color_primaries , self . color_trc , self . color_space , self . chroma_location , self . video_delay , self . channel_layout , self . channels , self . sample_rate , self . block_align , self . frame_size , self . initial_padding , self . trailing_padding , self . seek_preroll , self . ch_layout)
-    }
-}
-extern "C" {
-    #[doc = " Allocate a new AVCodecParameters and set its fields to default values\n (unknown/invalid/0). The returned struct must be freed with\n avcodec_parameters_free()."]
-    pub fn avcodec_parameters_alloc() -> *mut AVCodecParameters;
-}
-extern "C" {
-    #[doc = " Free an AVCodecParameters instance and everything associated with it and\n write NULL to the supplied pointer."]
-    pub fn avcodec_parameters_free(par: *mut *mut AVCodecParameters);
-}
-extern "C" {
-    #[doc = " Copy the contents of src to dst. Any allocated fields in dst are freed and\n replaced with newly allocated duplicates of the corresponding fields in src.\n\n @return >= 0 on success, a negative AVERROR code on failure."]
-    pub fn avcodec_parameters_copy(
-        dst: *mut AVCodecParameters,
-        src: *const AVCodecParameters,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " This function is the same as av_get_audio_frame_duration(), except it works\n with AVCodecParameters instead of an AVCodecContext."]
-    pub fn av_get_audio_frame_duration2(
-        par: *mut AVCodecParameters,
-        frame_bytes: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
 #[doc = "< discard nothing"]
 pub const AVDiscard_AVDISCARD_NONE: AVDiscard = -16;
 #[doc = "< discard useless packets like 0 size packets in avi"]
@@ -14742,8 +14591,9 @@ pub const AVPacketSideDataType_AV_PKT_DATA_S12M_TIMECODE: AVPacketSideDataType =
 pub const AVPacketSideDataType_AV_PKT_DATA_DYNAMIC_HDR10_PLUS: AVPacketSideDataType = 31;
 #[doc = " The number of side data types.\n This is not part of the public API/ABI in the sense that it may\n change when new side data types are added.\n This must stay the last enum value.\n If its value becomes huge, some code using it\n needs to be updated as it assumes it to be smaller than other limits."]
 pub const AVPacketSideDataType_AV_PKT_DATA_NB: AVPacketSideDataType = 32;
-#[doc = " @defgroup lavc_packet AVPacket\n\n Types and functions for working with AVPacket.\n @{"]
+#[doc = " @defgroup lavc_packet_side_data AVPacketSideData\n\n Types and functions for working with AVPacketSideData.\n @{"]
 pub type AVPacketSideDataType = ::std::os::raw::c_uint;
+#[doc = " This structure stores auxiliary information for decoding, presenting, or\n otherwise processing the coded stream. It is typically exported by demuxers\n and encoders and can be fed to decoders and muxers either in a per packet\n basis, or as global side data (applying to the entire coded stream).\n\n Global side data is handled as follows:\n - During demuxing, it may be exported through\n   @ref AVStream.codecpar.side_data \"AVStream's codec parameters\", which can\n   then be passed as input to decoders through the\n   @ref AVCodecContext.coded_side_data \"decoder context's side data\", for\n   initialization.\n - For muxing, it can be fed through @ref AVStream.codecpar.side_data\n   \"AVStream's codec parameters\", typically  the output of encoders through\n   the @ref AVCodecContext.coded_side_data \"encoder context's side data\", for\n   initialization.\n\n Packet specific side data is handled as follows:\n - During demuxing, it may be exported through @ref AVPacket.side_data\n   \"AVPacket's side data\", which can then be passed as input to decoders.\n - For muxing, it can be fed through @ref AVPacket.side_data \"AVPacket's\n   side data\", typically the output of encoders.\n\n Different modules may accept or export different types of side data\n depending on media type and codec. Refer to @ref AVPacketSideDataType for a\n list of defined types and where they may be found or used."]
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct AVPacketSideData {
@@ -14795,6 +14645,53 @@ fn bindgen_test_layout_AVPacketSideData() {
             stringify!(type_)
         )
     );
+}
+extern "C" {
+    #[doc = " Allocate a new packet side data.\n\n @param sd    pointer to an array of side data to which the side data should\n              be added. *sd may be NULL, in which case the array will be\n              initialized.\n @param nb_sd pointer to an integer containing the number of entries in\n              the array. The integer value will be increased by 1 on success.\n @param type  side data type\n @param size  desired side data size\n @param flags currently unused. Must be zero\n\n @return pointer to freshly allocated side data on success, or NULL otherwise."]
+    pub fn av_packet_side_data_new(
+        psd: *mut *mut AVPacketSideData,
+        pnb_sd: *mut ::std::os::raw::c_int,
+        type_: AVPacketSideDataType,
+        size: usize,
+        flags: ::std::os::raw::c_int,
+    ) -> *mut AVPacketSideData;
+}
+extern "C" {
+    #[doc = " Wrap existing data as packet side data.\n\n @param sd    pointer to an array of side data to which the side data should\n              be added. *sd may be NULL, in which case the array will be\n              initialized\n @param nb_sd pointer to an integer containing the number of entries in\n              the array. The integer value will be increased by 1 on success.\n @param type  side data type\n @param data  a data array. It must be allocated with the av_malloc() family\n              of functions. The ownership of the data is transferred to the\n              side data array on success\n @param size  size of the data array\n @param flags currently unused. Must be zero\n\n @return pointer to freshly allocated side data on success, or NULL otherwise\n         On failure, the side data array is unchanged and the data remains\n         owned by the caller."]
+    pub fn av_packet_side_data_add(
+        sd: *mut *mut AVPacketSideData,
+        nb_sd: *mut ::std::os::raw::c_int,
+        type_: AVPacketSideDataType,
+        data: *mut ::std::os::raw::c_void,
+        size: usize,
+        flags: ::std::os::raw::c_int,
+    ) -> *mut AVPacketSideData;
+}
+extern "C" {
+    #[doc = " Get side information from a side data array.\n\n @param sd    the array from which the side data should be fetched\n @param nb_sd value containing the number of entries in the array.\n @param type  desired side information type\n\n @return pointer to side data if present or NULL otherwise"]
+    pub fn av_packet_side_data_get(
+        sd: *const AVPacketSideData,
+        nb_sd: ::std::os::raw::c_int,
+        type_: AVPacketSideDataType,
+    ) -> *const AVPacketSideData;
+}
+extern "C" {
+    #[doc = " Remove side data of the given type from a side data array.\n\n @param sd    the array from which the side data should be removed\n @param nb_sd pointer to an integer containing the number of entries in\n              the array. Will be reduced by the amount of entries removed\n              upon return\n @param type  side information type"]
+    pub fn av_packet_side_data_remove(
+        sd: *mut AVPacketSideData,
+        nb_sd: *mut ::std::os::raw::c_int,
+        type_: AVPacketSideDataType,
+    );
+}
+extern "C" {
+    #[doc = " Convenience function to free all the side data stored in an array, and\n the array itself.\n\n @param sd    pointer to array of side data to free. Will be set to NULL\n              upon return.\n @param nb_sd pointer to an integer containing the number of entries in\n              the array. Will be set to 0 upon return."]
+    pub fn av_packet_side_data_free(
+        sd: *mut *mut AVPacketSideData,
+        nb_sd: *mut ::std::os::raw::c_int,
+    );
+}
+extern "C" {
+    pub fn av_packet_side_data_name(type_: AVPacketSideDataType) -> *const ::std::os::raw::c_char;
 }
 #[doc = " This structure stores compressed data. It is typically exported by demuxers\n and then passed as input to decoders, or received as output from encoders and\n then passed to muxers.\n\n For video, it should typically contain one compressed frame. For audio it may\n contain several compressed frames. Encoders are allowed to output empty\n packets, with no compressed data, containing only side data\n (e.g. to update some stream parameters at the end of encoding).\n\n The semantics of data ownership depends on the buf field.\n If it is set, the packet data is dynamically allocated and is\n valid indefinitely until a call to av_packet_unref() reduces the\n reference count to 0.\n\n If the buf field is not set av_packet_ref() would make a copy instead\n of increasing the reference count.\n\n The side data is always allocated with av_malloc(), copied by\n av_packet_ref() and freed by av_packet_unref().\n\n sizeof(AVPacket) being a part of the public ABI is deprecated. once\n av_init_packet() is removed, new packets will only be able to be allocated\n with av_packet_alloc(), and new fields may be added to the end of the struct\n with a minor bump.\n\n @see av_packet_alloc\n @see av_packet_ref\n @see av_packet_unref"]
 #[repr(C)]
@@ -15105,9 +15002,6 @@ extern "C" {
     ) -> *mut u8;
 }
 extern "C" {
-    pub fn av_packet_side_data_name(type_: AVPacketSideDataType) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
     #[doc = " Pack a dictionary for use in side_data.\n\n @param dict The dictionary to pack.\n @param size pointer to store the size of the returned data\n @return pointer to data if successful, NULL otherwise"]
     pub fn av_packet_pack_dictionary(dict: *mut AVDictionary, size: *mut usize) -> *mut u8;
 }
@@ -15150,6 +15044,559 @@ extern "C" {
 extern "C" {
     #[doc = " Convert valid timing fields (timestamps / durations) in a packet from one\n timebase to another. Timestamps with unknown values (AV_NOPTS_VALUE) will be\n ignored.\n\n @param pkt packet on which the conversion will be performed\n @param tb_src source timebase, in which the timing fields in pkt are\n               expressed\n @param tb_dst destination timebase, to which the timing fields will be\n               converted"]
     pub fn av_packet_rescale_ts(pkt: *mut AVPacket, tb_src: AVRational, tb_dst: AVRational);
+}
+#[doc = " This struct describes the properties of a single codec described by an\n AVCodecID.\n @see avcodec_descriptor_get()"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct AVCodecDescriptor {
+    pub id: AVCodecID,
+    pub type_: AVMediaType,
+    #[doc = " Name of the codec described by this descriptor. It is non-empty and\n unique for each codec descriptor. It should contain alphanumeric\n characters and '_' only."]
+    pub name: *const ::std::os::raw::c_char,
+    #[doc = " A more descriptive name for this codec. May be NULL."]
+    pub long_name: *const ::std::os::raw::c_char,
+    #[doc = " Codec properties, a combination of AV_CODEC_PROP_* flags."]
+    pub props: ::std::os::raw::c_int,
+    #[doc = " MIME type(s) associated with the codec.\n May be NULL; if not, a NULL-terminated array of MIME types.\n The first item is always non-NULL and is the preferred MIME type."]
+    pub mime_types: *const *const ::std::os::raw::c_char,
+    #[doc = " If non-NULL, an array of profiles recognized for this codec.\n Terminated with AV_PROFILE_UNKNOWN."]
+    pub profiles: *const AVProfile,
+}
+#[test]
+fn bindgen_test_layout_AVCodecDescriptor() {
+    const UNINIT: ::std::mem::MaybeUninit<AVCodecDescriptor> = ::std::mem::MaybeUninit::uninit();
+    let ptr = UNINIT.as_ptr();
+    assert_eq!(
+        ::std::mem::size_of::<AVCodecDescriptor>(),
+        48usize,
+        concat!("Size of: ", stringify!(AVCodecDescriptor))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<AVCodecDescriptor>(),
+        8usize,
+        concat!("Alignment of ", stringify!(AVCodecDescriptor))
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).id) as usize - ptr as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecDescriptor),
+            "::",
+            stringify!(id)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).type_) as usize - ptr as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecDescriptor),
+            "::",
+            stringify!(type_)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).name) as usize - ptr as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecDescriptor),
+            "::",
+            stringify!(name)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).long_name) as usize - ptr as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecDescriptor),
+            "::",
+            stringify!(long_name)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).props) as usize - ptr as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecDescriptor),
+            "::",
+            stringify!(props)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).mime_types) as usize - ptr as usize },
+        32usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecDescriptor),
+            "::",
+            stringify!(mime_types)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).profiles) as usize - ptr as usize },
+        40usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecDescriptor),
+            "::",
+            stringify!(profiles)
+        )
+    );
+}
+extern "C" {
+    #[doc = " @return descriptor for given codec ID or NULL if no descriptor exists."]
+    pub fn avcodec_descriptor_get(id: AVCodecID) -> *const AVCodecDescriptor;
+}
+extern "C" {
+    #[doc = " Iterate over all codec descriptors known to libavcodec.\n\n @param prev previous descriptor. NULL to get the first descriptor.\n\n @return next descriptor or NULL after the last descriptor"]
+    pub fn avcodec_descriptor_next(prev: *const AVCodecDescriptor) -> *const AVCodecDescriptor;
+}
+extern "C" {
+    #[doc = " @return codec descriptor with the given name or NULL if no such descriptor\n         exists."]
+    pub fn avcodec_descriptor_get_by_name(
+        name: *const ::std::os::raw::c_char,
+    ) -> *const AVCodecDescriptor;
+}
+#[doc = " This struct describes the properties of an encoded stream.\n\n sizeof(AVCodecParameters) is not a part of the public ABI, this struct must\n be allocated with avcodec_parameters_alloc() and freed with\n avcodec_parameters_free()."]
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct AVCodecParameters {
+    #[doc = " General type of the encoded data."]
+    pub codec_type: AVMediaType,
+    #[doc = " Specific type of the encoded data (the codec used)."]
+    pub codec_id: AVCodecID,
+    #[doc = " Additional information about the codec (corresponds to the AVI FOURCC)."]
+    pub codec_tag: u32,
+    #[doc = " Extra binary data needed for initializing the decoder, codec-dependent.\n\n Must be allocated with av_malloc() and will be freed by\n avcodec_parameters_free(). The allocated size of extradata must be at\n least extradata_size + AV_INPUT_BUFFER_PADDING_SIZE, with the padding\n bytes zeroed."]
+    pub extradata: *mut u8,
+    #[doc = " Size of the extradata content in bytes."]
+    pub extradata_size: ::std::os::raw::c_int,
+    #[doc = " - video: the pixel format, the value corresponds to enum AVPixelFormat.\n - audio: the sample format, the value corresponds to enum AVSampleFormat."]
+    pub format: ::std::os::raw::c_int,
+    #[doc = " The average bitrate of the encoded data (in bits per second)."]
+    pub bit_rate: i64,
+    #[doc = " The number of bits per sample in the codedwords.\n\n This is basically the bitrate per sample. It is mandatory for a bunch of\n formats to actually decode them. It's the number of bits for one sample in\n the actual coded bitstream.\n\n This could be for example 4 for ADPCM\n For PCM formats this matches bits_per_raw_sample\n Can be 0"]
+    pub bits_per_coded_sample: ::std::os::raw::c_int,
+    #[doc = " This is the number of valid bits in each output sample. If the\n sample format has more bits, the least significant bits are additional\n padding bits, which are always 0. Use right shifts to reduce the sample\n to its actual size. For example, audio formats with 24 bit samples will\n have bits_per_raw_sample set to 24, and format set to AV_SAMPLE_FMT_S32.\n To get the original sample use \"(int32_t)sample >> 8\".\"\n\n For ADPCM this might be 12 or 16 or similar\n Can be 0"]
+    pub bits_per_raw_sample: ::std::os::raw::c_int,
+    #[doc = " Codec-specific bitstream restrictions that the stream conforms to."]
+    pub profile: ::std::os::raw::c_int,
+    pub level: ::std::os::raw::c_int,
+    #[doc = " Video only. The dimensions of the video frame in pixels."]
+    pub width: ::std::os::raw::c_int,
+    pub height: ::std::os::raw::c_int,
+    #[doc = " Video only. The aspect ratio (width / height) which a single pixel\n should have when displayed.\n\n When the aspect ratio is unknown / undefined, the numerator should be\n set to 0 (the denominator may have any value)."]
+    pub sample_aspect_ratio: AVRational,
+    #[doc = " Video only. The order of the fields in interlaced video."]
+    pub field_order: AVFieldOrder,
+    #[doc = " Video only. Additional colorspace characteristics."]
+    pub color_range: AVColorRange,
+    pub color_primaries: AVColorPrimaries,
+    pub color_trc: AVColorTransferCharacteristic,
+    pub color_space: AVColorSpace,
+    pub chroma_location: AVChromaLocation,
+    #[doc = " Video only. Number of delayed frames."]
+    pub video_delay: ::std::os::raw::c_int,
+    #[doc = " Audio only. The channel layout bitmask. May be 0 if the channel layout is\n unknown or unspecified, otherwise the number of bits set must be equal to\n the channels field.\n @deprecated use ch_layout"]
+    pub channel_layout: u64,
+    #[doc = " Audio only. The number of audio channels.\n @deprecated use ch_layout.nb_channels"]
+    pub channels: ::std::os::raw::c_int,
+    #[doc = " Audio only. The number of audio samples per second."]
+    pub sample_rate: ::std::os::raw::c_int,
+    #[doc = " Audio only. The number of bytes per coded audio frame, required by some\n formats.\n\n Corresponds to nBlockAlign in WAVEFORMATEX."]
+    pub block_align: ::std::os::raw::c_int,
+    #[doc = " Audio only. Audio frame size, if known. Required by some formats to be static."]
+    pub frame_size: ::std::os::raw::c_int,
+    #[doc = " Audio only. The amount of padding (in samples) inserted by the encoder at\n the beginning of the audio. I.e. this number of leading decoded samples\n must be discarded by the caller to get the original audio without leading\n padding."]
+    pub initial_padding: ::std::os::raw::c_int,
+    #[doc = " Audio only. The amount of padding (in samples) appended by the encoder to\n the end of the audio. I.e. this number of decoded samples must be\n discarded by the caller from the end of the stream to get the original\n audio without any trailing padding."]
+    pub trailing_padding: ::std::os::raw::c_int,
+    #[doc = " Audio only. Number of samples to skip after a discontinuity."]
+    pub seek_preroll: ::std::os::raw::c_int,
+    #[doc = " Audio only. The channel layout and number of channels."]
+    pub ch_layout: AVChannelLayout,
+    #[doc = " Video only. Number of frames per second, for streams with constant frame\n durations. Should be set to { 0, 1 } when some frames have differing\n durations or if the value is not known.\n\n @note This field correponds to values that are stored in codec-level\n headers and is typically overridden by container/transport-layer\n timestamps, when available. It should thus be used only as a last resort,\n when no higher-level timing information is available."]
+    pub framerate: AVRational,
+    #[doc = " Additional data associated with the entire stream."]
+    pub coded_side_data: *mut AVPacketSideData,
+    #[doc = " Amount of entries in @ref coded_side_data."]
+    pub nb_coded_side_data: ::std::os::raw::c_int,
+}
+#[test]
+fn bindgen_test_layout_AVCodecParameters() {
+    const UNINIT: ::std::mem::MaybeUninit<AVCodecParameters> = ::std::mem::MaybeUninit::uninit();
+    let ptr = UNINIT.as_ptr();
+    assert_eq!(
+        ::std::mem::size_of::<AVCodecParameters>(),
+        192usize,
+        concat!("Size of: ", stringify!(AVCodecParameters))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<AVCodecParameters>(),
+        8usize,
+        concat!("Alignment of ", stringify!(AVCodecParameters))
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).codec_type) as usize - ptr as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(codec_type)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).codec_id) as usize - ptr as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(codec_id)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).codec_tag) as usize - ptr as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(codec_tag)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).extradata) as usize - ptr as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(extradata)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).extradata_size) as usize - ptr as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(extradata_size)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).format) as usize - ptr as usize },
+        28usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(format)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).bit_rate) as usize - ptr as usize },
+        32usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(bit_rate)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).bits_per_coded_sample) as usize - ptr as usize },
+        40usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(bits_per_coded_sample)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).bits_per_raw_sample) as usize - ptr as usize },
+        44usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(bits_per_raw_sample)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).profile) as usize - ptr as usize },
+        48usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(profile)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).level) as usize - ptr as usize },
+        52usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(level)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).width) as usize - ptr as usize },
+        56usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(width)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).height) as usize - ptr as usize },
+        60usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(height)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).sample_aspect_ratio) as usize - ptr as usize },
+        64usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(sample_aspect_ratio)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).field_order) as usize - ptr as usize },
+        72usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(field_order)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).color_range) as usize - ptr as usize },
+        76usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(color_range)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).color_primaries) as usize - ptr as usize },
+        80usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(color_primaries)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).color_trc) as usize - ptr as usize },
+        84usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(color_trc)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).color_space) as usize - ptr as usize },
+        88usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(color_space)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).chroma_location) as usize - ptr as usize },
+        92usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(chroma_location)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).video_delay) as usize - ptr as usize },
+        96usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(video_delay)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).channel_layout) as usize - ptr as usize },
+        104usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(channel_layout)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).channels) as usize - ptr as usize },
+        112usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(channels)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).sample_rate) as usize - ptr as usize },
+        116usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(sample_rate)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).block_align) as usize - ptr as usize },
+        120usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(block_align)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).frame_size) as usize - ptr as usize },
+        124usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(frame_size)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).initial_padding) as usize - ptr as usize },
+        128usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(initial_padding)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).trailing_padding) as usize - ptr as usize },
+        132usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(trailing_padding)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).seek_preroll) as usize - ptr as usize },
+        136usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(seek_preroll)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).ch_layout) as usize - ptr as usize },
+        144usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(ch_layout)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).framerate) as usize - ptr as usize },
+        168usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(framerate)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).coded_side_data) as usize - ptr as usize },
+        176usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(coded_side_data)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).nb_coded_side_data) as usize - ptr as usize },
+        184usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(AVCodecParameters),
+            "::",
+            stringify!(nb_coded_side_data)
+        )
+    );
+}
+impl ::std::fmt::Debug for AVCodecParameters {
+    fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+        write ! (f , "AVCodecParameters {{ codec_type: {:?}, codec_id: {:?}, codec_tag: {:?}, extradata: {:?}, extradata_size: {:?}, format: {:?}, bit_rate: {:?}, bits_per_coded_sample: {:?}, bits_per_raw_sample: {:?}, profile: {:?}, level: {:?}, width: {:?}, height: {:?}, sample_aspect_ratio: {:?}, field_order: {:?}, color_range: {:?}, color_primaries: {:?}, color_trc: {:?}, color_space: {:?}, chroma_location: {:?}, video_delay: {:?}, channel_layout: {:?}, channels: {:?}, sample_rate: {:?}, block_align: {:?}, frame_size: {:?}, initial_padding: {:?}, trailing_padding: {:?}, seek_preroll: {:?}, ch_layout: {:?}, framerate: {:?}, coded_side_data: {:?}, nb_coded_side_data: {:?} }}" , self . codec_type , self . codec_id , self . codec_tag , self . extradata , self . extradata_size , self . format , self . bit_rate , self . bits_per_coded_sample , self . bits_per_raw_sample , self . profile , self . level , self . width , self . height , self . sample_aspect_ratio , self . field_order , self . color_range , self . color_primaries , self . color_trc , self . color_space , self . chroma_location , self . video_delay , self . channel_layout , self . channels , self . sample_rate , self . block_align , self . frame_size , self . initial_padding , self . trailing_padding , self . seek_preroll , self . ch_layout , self . framerate , self . coded_side_data , self . nb_coded_side_data)
+    }
+}
+extern "C" {
+    #[doc = " Allocate a new AVCodecParameters and set its fields to default values\n (unknown/invalid/0). The returned struct must be freed with\n avcodec_parameters_free()."]
+    pub fn avcodec_parameters_alloc() -> *mut AVCodecParameters;
+}
+extern "C" {
+    #[doc = " Free an AVCodecParameters instance and everything associated with it and\n write NULL to the supplied pointer."]
+    pub fn avcodec_parameters_free(par: *mut *mut AVCodecParameters);
+}
+extern "C" {
+    #[doc = " Copy the contents of src to dst. Any allocated fields in dst are freed and\n replaced with newly allocated duplicates of the corresponding fields in src.\n\n @return >= 0 on success, a negative AVERROR code on failure."]
+    pub fn avcodec_parameters_copy(
+        dst: *mut AVCodecParameters,
+        src: *const AVCodecParameters,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    #[doc = " This function is the same as av_get_audio_frame_duration(), except it works\n with AVCodecParameters instead of an AVCodecContext."]
+    pub fn av_get_audio_frame_duration2(
+        par: *mut AVCodecParameters,
+        frame_bytes: ::std::os::raw::c_int,
+    ) -> ::std::os::raw::c_int;
 }
 #[doc = " @ingroup lavc_encoding"]
 #[repr(C)]
@@ -15215,11 +15662,6 @@ fn bindgen_test_layout_RcOverride() {
         )
     );
 }
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct AVCodecInternal {
-    _unused: [u8; 0],
-}
 #[doc = " main external API structure.\n New fields can be added to the end with minor version bumps.\n Removal, reordering and changes to existing fields require a major\n version bump.\n You can use AVOptions (av_opt* / av_set/get*()) to access these fields from user\n applications.\n The name string for AVOptions options matches the associated command line\n parameter name and can be found in libavcodec/options_table.h\n The AVOption/command line parameter names differ in some cases from the C\n structure field names for historic reasons or brevity.\n sizeof(AVCodecContext) must not be used outside libav*."]
 #[repr(C)]
 #[derive(Copy, Clone)]
@@ -15254,7 +15696,7 @@ pub struct AVCodecContext {
     pub extradata_size: ::std::os::raw::c_int,
     #[doc = " This is the fundamental unit of time (in seconds) in terms\n of which frame timestamps are represented. For fixed-fps content,\n timebase should be 1/framerate and timestamp increments should be\n identically 1.\n This often, but not always is the inverse of the frame rate or field rate\n for video. 1/time_base is not the average frame rate if the frame rate is not\n constant.\n\n Like containers, elementary streams also can store timestamps, 1/time_base\n is the unit in which these timestamps are specified.\n As example of such codec time base see ISO/IEC 14496-2:2001(E)\n vop_time_increment_resolution and fixed_vop_rate\n (fixed_vop_rate == 0 implies that it is different from the framerate)\n\n - encoding: MUST be set by user.\n - decoding: unused."]
     pub time_base: AVRational,
-    #[doc = " For some codecs, the time base is closer to the field rate than the frame rate.\n Most notably, H.264 and MPEG-2 specify time_base as half of frame duration\n if no telecine is used ...\n\n Set to time_base ticks per frame. Default 1, e.g., H.264/MPEG-2 set it to 2."]
+    #[doc = " For some codecs, the time base is closer to the field rate than the frame rate.\n Most notably, H.264 and MPEG-2 specify time_base as half of frame duration\n if no telecine is used ...\n\n Set to time_base ticks per frame. Default 1, e.g., H.264/MPEG-2 set it to 2.\n\n @deprecated\n - decoding: Use AVCodecDescriptor.props & AV_CODEC_PROP_FIELDS\n - encoding: Set AVCodecContext.framerate instead\n"]
     pub ticks_per_frame: ::std::os::raw::c_int,
     #[doc = " Codec delay.\n\n Encoding: Number of frames delay there will be from the encoder input to\n           the decoder output. (we assume the decoder matches the spec)\n Decoding: Number of frames delay in addition to what a standard decoder\n           as specified in the spec would produce.\n\n Video:\n   Number of frames the decoded output will be delayed relative to the\n   encoded input.\n\n Audio:\n   For encoding, this field is unused (see initial_padding).\n\n   For decoding, this is the number of samples the decoder needs to\n   output before the decoder's output is valid. When seeking, you should\n   start decoding this many samples prior to your desired seek point.\n\n - encoding: Set by libavcodec.\n - decoding: Set by libavcodec."]
     pub delay: ::std::os::raw::c_int,
@@ -15365,7 +15807,7 @@ pub struct AVCodecContext {
     pub color_trc: AVColorTransferCharacteristic,
     #[doc = " YUV colorspace type.\n - encoding: Set by user\n - decoding: Set by libavcodec"]
     pub colorspace: AVColorSpace,
-    #[doc = " MPEG vs JPEG YUV range.\n - encoding: Set by user\n - decoding: Set by libavcodec"]
+    #[doc = " MPEG vs JPEG YUV range.\n - encoding: Set by user to override the default output color range value,\n   If not specified, libavcodec sets the color range depending on the\n   output format.\n - decoding: Set by libavcodec, can be set by the user to propagate the\n   color range to components reading from the decoder context."]
     pub color_range: AVColorRange,
     #[doc = " This defines the location of chroma samples.\n - encoding: Set by user\n - decoding: Set by libavcodec"]
     pub chroma_sample_location: AVChromaLocation,
@@ -15413,7 +15855,7 @@ pub struct AVCodecContext {
     pub qmax: ::std::os::raw::c_int,
     #[doc = " maximum quantizer difference between frames\n - encoding: Set by user.\n - decoding: unused"]
     pub max_qdiff: ::std::os::raw::c_int,
-    #[doc = " decoder bitstream buffer size\n - encoding: Set by user.\n - decoding: unused"]
+    #[doc = " decoder bitstream buffer size\n - encoding: Set by user.\n - decoding: May be set by libavcodec."]
     pub rc_buffer_size: ::std::os::raw::c_int,
     #[doc = " ratecontrol override, see RcOverride\n - encoding: Allocated/set/freed by user.\n - decoding: unused"]
     pub rc_override_count: ::std::os::raw::c_int,
@@ -15503,9 +15945,9 @@ pub struct AVCodecContext {
     >,
     #[doc = " noise vs. sse weight for the nsse comparison function\n - encoding: Set by user.\n - decoding: unused"]
     pub nsse_weight: ::std::os::raw::c_int,
-    #[doc = " profile\n - encoding: Set by user.\n - decoding: Set by libavcodec."]
+    #[doc = " profile\n - encoding: Set by user.\n - decoding: Set by libavcodec.\n See the AV_PROFILE_* defines in defs.h."]
     pub profile: ::std::os::raw::c_int,
-    #[doc = " level\n - encoding: Set by user.\n - decoding: Set by libavcodec."]
+    #[doc = " Encoding level descriptor.\n - encoding: Set by user, corresponds to a specific level defined by the\n   codec, usually corresponding to the profile level, if not specified it\n   is set to FF_LEVEL_UNKNOWN.\n - decoding: Set by libavcodec.\n See AV_LEVEL_* in defs.h."]
     pub level: ::std::os::raw::c_int,
     #[doc = " Skip loop filtering for selected frames.\n - encoding: unused\n - decoding: Set by user."]
     pub skip_loop_filter: AVDiscard,
@@ -15522,7 +15964,7 @@ pub struct AVCodecContext {
     pub framerate: AVRational,
     #[doc = " Nominal unaccelerated pixel format, see AV_PIX_FMT_xxx.\n - encoding: unused.\n - decoding: Set by libavcodec before calling get_format()"]
     pub sw_pix_fmt: AVPixelFormat,
-    #[doc = " Timebase in which pkt_dts/pts and AVPacket.dts/pts are.\n - encoding unused.\n - decoding set by user."]
+    #[doc = " Timebase in which pkt_dts/pts and AVPacket.dts/pts are expressed.\n - encoding: unused.\n - decoding: set by user."]
     pub pkt_timebase: AVRational,
     #[doc = " AVCodecDescriptor\n - encoding: unused.\n - decoding: set by libavcodec."]
     pub codec_descriptor: *const AVCodecDescriptor,
@@ -15550,7 +15992,7 @@ pub struct AVCodecContext {
     pub codec_whitelist: *mut ::std::os::raw::c_char,
     #[doc = " Properties of the stream that gets decoded\n - encoding: unused\n - decoding: set by libavcodec"]
     pub properties: ::std::os::raw::c_uint,
-    #[doc = " Additional data associated with the entire coded stream.\n\n - decoding: unused\n - encoding: may be set by libavcodec after avcodec_open2()."]
+    #[doc = " Additional data associated with the entire coded stream.\n\n - decoding: may be set by user before calling avcodec_open2().\n - encoding: may be set by libavcodec after avcodec_open2()."]
     pub coded_side_data: *mut AVPacketSideData,
     pub nb_coded_side_data: ::std::os::raw::c_int,
     #[doc = " A reference to the AVHWFramesContext describing the input (for encoding)\n or output (decoding) frames. The reference is set by the caller and\n afterwards owned (and freed) by libavcodec - it should never be read by\n the caller after being set.\n\n - decoding: This field should be set by the caller from the get_format()\n             callback. The previous reference (if any) will always be\n             unreffed by libavcodec before the get_format() call.\n\n             If the default get_buffer2() is used with a hwaccel pixel\n             format, then this AVHWFramesContext will be used for\n             allocating the frame buffers.\n\n - encoding: For hardware encoders configured to use a hwaccel pixel\n             format, this field should be set by the caller to a reference\n             to the AVHWFramesContext describing input frames.\n             AVHWFramesContext.format must be equal to\n             AVCodecContext.pix_fmt.\n\n             This field should be set before avcodec_open2() is called."]
@@ -17213,63 +17655,6 @@ pub struct AVHWAccel {
     pub pix_fmt: AVPixelFormat,
     #[doc = " Hardware accelerated codec capabilities.\n see AV_HWACCEL_CODEC_CAP_*"]
     pub capabilities: ::std::os::raw::c_int,
-    #[doc = " Allocate a custom buffer"]
-    pub alloc_frame: ::std::option::Option<
-        unsafe extern "C" fn(
-            avctx: *mut AVCodecContext,
-            frame: *mut AVFrame,
-        ) -> ::std::os::raw::c_int,
-    >,
-    #[doc = " Called at the beginning of each frame or field picture.\n\n Meaningful frame information (codec specific) is guaranteed to\n be parsed at this point. This function is mandatory.\n\n Note that buf can be NULL along with buf_size set to 0.\n Otherwise, this means the whole frame is available at this point.\n\n @param avctx the codec context\n @param buf the frame data buffer base\n @param buf_size the size of the frame in bytes\n @return zero if successful, a negative value otherwise"]
-    pub start_frame: ::std::option::Option<
-        unsafe extern "C" fn(
-            avctx: *mut AVCodecContext,
-            buf: *const u8,
-            buf_size: u32,
-        ) -> ::std::os::raw::c_int,
-    >,
-    #[doc = " Callback for parameter data (SPS/PPS/VPS etc).\n\n Useful for hardware decoders which keep persistent state about the\n video parameters, and need to receive any changes to update that state.\n\n @param avctx the codec context\n @param type the nal unit type\n @param buf the nal unit data buffer\n @param buf_size the size of the nal unit in bytes\n @return zero if successful, a negative value otherwise"]
-    pub decode_params: ::std::option::Option<
-        unsafe extern "C" fn(
-            avctx: *mut AVCodecContext,
-            type_: ::std::os::raw::c_int,
-            buf: *const u8,
-            buf_size: u32,
-        ) -> ::std::os::raw::c_int,
-    >,
-    #[doc = " Callback for each slice.\n\n Meaningful slice information (codec specific) is guaranteed to\n be parsed at this point. This function is mandatory.\n\n @param avctx the codec context\n @param buf the slice data buffer base\n @param buf_size the size of the slice in bytes\n @return zero if successful, a negative value otherwise"]
-    pub decode_slice: ::std::option::Option<
-        unsafe extern "C" fn(
-            avctx: *mut AVCodecContext,
-            buf: *const u8,
-            buf_size: u32,
-        ) -> ::std::os::raw::c_int,
-    >,
-    #[doc = " Called at the end of each frame or field picture.\n\n The whole picture is parsed at this point and can now be sent\n to the hardware accelerator. This function is mandatory.\n\n @param avctx the codec context\n @return zero if successful, a negative value otherwise"]
-    pub end_frame: ::std::option::Option<
-        unsafe extern "C" fn(avctx: *mut AVCodecContext) -> ::std::os::raw::c_int,
-    >,
-    #[doc = " Size of per-frame hardware accelerator private data.\n\n Private data is allocated with av_mallocz() before\n AVCodecContext.get_buffer() and deallocated after\n AVCodecContext.release_buffer()."]
-    pub frame_priv_data_size: ::std::os::raw::c_int,
-    #[doc = " Initialize the hwaccel private data.\n\n This will be called from ff_get_format(), after hwaccel and\n hwaccel_context are set and the hwaccel private data in AVCodecInternal\n is allocated."]
-    pub init: ::std::option::Option<
-        unsafe extern "C" fn(avctx: *mut AVCodecContext) -> ::std::os::raw::c_int,
-    >,
-    #[doc = " Uninitialize the hwaccel private data.\n\n This will be called from get_format() or avcodec_close(), after hwaccel\n and hwaccel_context are already uninitialized."]
-    pub uninit: ::std::option::Option<
-        unsafe extern "C" fn(avctx: *mut AVCodecContext) -> ::std::os::raw::c_int,
-    >,
-    #[doc = " Size of the private data to allocate in\n AVCodecInternal.hwaccel_priv_data."]
-    pub priv_data_size: ::std::os::raw::c_int,
-    #[doc = " Internal hwaccel capabilities."]
-    pub caps_internal: ::std::os::raw::c_int,
-    #[doc = " Fill the given hw_frames context with current codec parameters. Called\n from get_format. Refer to avcodec_get_hw_frames_parameters() for\n details.\n\n This CAN be called before AVHWAccel.init is called, and you must assume\n that avctx->hwaccel_priv_data is invalid."]
-    pub frame_params: ::std::option::Option<
-        unsafe extern "C" fn(
-            avctx: *mut AVCodecContext,
-            hw_frames_ctx: *mut AVBufferRef,
-        ) -> ::std::os::raw::c_int,
-    >,
 }
 #[test]
 fn bindgen_test_layout_AVHWAccel() {
@@ -17277,7 +17662,7 @@ fn bindgen_test_layout_AVHWAccel() {
     let ptr = UNINIT.as_ptr();
     assert_eq!(
         ::std::mem::size_of::<AVHWAccel>(),
-        104usize,
+        24usize,
         concat!("Size of: ", stringify!(AVHWAccel))
     );
     assert_eq!(
@@ -17333,116 +17718,6 @@ fn bindgen_test_layout_AVHWAccel() {
             stringify!(AVHWAccel),
             "::",
             stringify!(capabilities)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).alloc_frame) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVHWAccel),
-            "::",
-            stringify!(alloc_frame)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).start_frame) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVHWAccel),
-            "::",
-            stringify!(start_frame)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).decode_params) as usize - ptr as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVHWAccel),
-            "::",
-            stringify!(decode_params)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).decode_slice) as usize - ptr as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVHWAccel),
-            "::",
-            stringify!(decode_slice)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).end_frame) as usize - ptr as usize },
-        56usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVHWAccel),
-            "::",
-            stringify!(end_frame)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).frame_priv_data_size) as usize - ptr as usize },
-        64usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVHWAccel),
-            "::",
-            stringify!(frame_priv_data_size)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).init) as usize - ptr as usize },
-        72usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVHWAccel),
-            "::",
-            stringify!(init)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).uninit) as usize - ptr as usize },
-        80usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVHWAccel),
-            "::",
-            stringify!(uninit)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).priv_data_size) as usize - ptr as usize },
-        88usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVHWAccel),
-            "::",
-            stringify!(priv_data_size)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).caps_internal) as usize - ptr as usize },
-        92usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVHWAccel),
-            "::",
-            stringify!(caps_internal)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).frame_params) as usize - ptr as usize },
-        96usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(AVHWAccel),
-            "::",
-            stringify!(frame_params)
         )
     );
 }
@@ -17732,7 +18007,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    #[doc = " Initialize the AVCodecContext to use the given AVCodec. Prior to using this\n function the context has to be allocated with avcodec_alloc_context3().\n\n The functions avcodec_find_decoder_by_name(), avcodec_find_encoder_by_name(),\n avcodec_find_decoder() and avcodec_find_encoder() provide an easy way for\n retrieving a codec.\n\n @note Always call this function before using decoding routines (such as\n @ref avcodec_receive_frame()).\n\n @code\n av_dict_set(&opts, \"b\", \"2.5M\", 0);\n codec = avcodec_find_decoder(AV_CODEC_ID_H264);\n if (!codec)\n     exit(1);\n\n context = avcodec_alloc_context3(codec);\n\n if (avcodec_open2(context, codec, opts) < 0)\n     exit(1);\n @endcode\n\n @param avctx The context to initialize.\n @param codec The codec to open this context for. If a non-NULL codec has been\n              previously passed to avcodec_alloc_context3() or\n              for this context, then this parameter MUST be either NULL or\n              equal to the previously passed codec.\n @param options A dictionary filled with AVCodecContext and codec-private options.\n                On return this object will be filled with options that were not found.\n\n @return zero on success, a negative value on error\n @see avcodec_alloc_context3(), avcodec_find_decoder(), avcodec_find_encoder(),\n      av_dict_set(), av_opt_find()."]
+    #[doc = " Initialize the AVCodecContext to use the given AVCodec. Prior to using this\n function the context has to be allocated with avcodec_alloc_context3().\n\n The functions avcodec_find_decoder_by_name(), avcodec_find_encoder_by_name(),\n avcodec_find_decoder() and avcodec_find_encoder() provide an easy way for\n retrieving a codec.\n\n Depending on the codec, you might need to set options in the codec context\n also for decoding (e.g. width, height, or the pixel or audio sample format in\n the case the information is not available in the bitstream, as when decoding\n raw audio or video).\n\n Options in the codec context can be set either by setting them in the options\n AVDictionary, or by setting the values in the context itself, directly or by\n using the av_opt_set() API before calling this function.\n\n Example:\n @code\n av_dict_set(&opts, \"b\", \"2.5M\", 0);\n codec = avcodec_find_decoder(AV_CODEC_ID_H264);\n if (!codec)\n     exit(1);\n\n context = avcodec_alloc_context3(codec);\n\n if (avcodec_open2(context, codec, opts) < 0)\n     exit(1);\n @endcode\n\n In the case AVCodecParameters are available (e.g. when demuxing a stream\n using libavformat, and accessing the AVStream contained in the demuxer), the\n codec parameters can be copied to the codec context using\n avcodec_parameters_to_context(), as in the following example:\n\n @code\n AVStream *stream = ...;\n context = avcodec_alloc_context3(codec);\n if (avcodec_parameters_to_context(context, stream->codecpar) < 0)\n     exit(1);\n if (avcodec_open2(context, codec, NULL) < 0)\n     exit(1);\n @endcode\n\n @note Always call this function before using decoding routines (such as\n @ref avcodec_receive_frame()).\n\n @param avctx The context to initialize.\n @param codec The codec to open this context for. If a non-NULL codec has been\n              previously passed to avcodec_alloc_context3() or\n              for this context, then this parameter MUST be either NULL or\n              equal to the previously passed codec.\n @param options A dictionary filled with AVCodecContext and codec-private\n                options, which are set on top of the options already set in\n                avctx, can be NULL. On return this object will be filled with\n                options that were not found in the avctx codec context.\n\n @return zero on success, a negative value on error\n @see avcodec_alloc_context3(), avcodec_find_decoder(), avcodec_find_encoder(),\n      av_dict_set(), av_opt_set(), av_opt_find(), avcodec_parameters_to_context()"]
     pub fn avcodec_open2(
         avctx: *mut AVCodecContext,
         codec: *const AVCodec,
@@ -17812,7 +18087,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    #[doc = " Return decoded output data from a decoder or encoder (when the\n AV_CODEC_FLAG_RECON_FRAME flag is used).\n\n @param avctx codec context\n @param frame This will be set to a reference-counted video or audio\n              frame (depending on the decoder type) allocated by the\n              codec. Note that the function will always call\n              av_frame_unref(frame) before doing anything else.\n\n @retval 0                success, a frame was returned\n @retval AVERROR(EAGAIN)  output is not available in this state - user must\n                          try to send new input\n @retval AVERROR_EOF      the codec has been fully flushed, and there will be\n                          no more output frames\n @retval AVERROR(EINVAL)  codec not opened, or it is an encoder without the\n                          AV_CODEC_FLAG_RECON_FRAME flag enabled\n @retval AVERROR_INPUT_CHANGED current decoded frame has changed parameters with\n                          respect to first decoded frame. Applicable when flag\n                          AV_CODEC_FLAG_DROPCHANGED is set.\n @retval \"other negative error code\" legitimate decoding errors"]
+    #[doc = " Return decoded output data from a decoder or encoder (when the\n @ref AV_CODEC_FLAG_RECON_FRAME flag is used).\n\n @param avctx codec context\n @param frame This will be set to a reference-counted video or audio\n              frame (depending on the decoder type) allocated by the\n              codec. Note that the function will always call\n              av_frame_unref(frame) before doing anything else.\n\n @retval 0                success, a frame was returned\n @retval AVERROR(EAGAIN)  output is not available in this state - user must\n                          try to send new input\n @retval AVERROR_EOF      the codec has been fully flushed, and there will be\n                          no more output frames\n @retval AVERROR(EINVAL)  codec not opened, or it is an encoder without the\n                          @ref AV_CODEC_FLAG_RECON_FRAME flag enabled\n @retval \"other negative error code\" legitimate decoding errors"]
     pub fn avcodec_receive_frame(
         avctx: *mut AVCodecContext,
         frame: *mut AVFrame,
@@ -18555,24 +18830,25 @@ pub struct FFTContext {
     _unused: [u8; 0],
 }
 extern "C" {
-    #[doc = " Set up a complex FFT.\n @param nbits           log2 of the length of the input array\n @param inverse         if 0 perform the forward transform, if 1 perform the inverse"]
+    #[doc = " Set up a complex FFT.\n @param nbits           log2 of the length of the input array\n @param inverse         if 0 perform the forward transform, if 1 perform the inverse\n @deprecated use av_tx_init from libavutil/tx.h with a type of AV_TX_FLOAT_FFT"]
     pub fn av_fft_init(
         nbits: ::std::os::raw::c_int,
         inverse: ::std::os::raw::c_int,
     ) -> *mut FFTContext;
 }
 extern "C" {
-    #[doc = " Do the permutation needed BEFORE calling ff_fft_calc()."]
+    #[doc = " Do the permutation needed BEFORE calling ff_fft_calc().\n @deprecated without replacement"]
     pub fn av_fft_permute(s: *mut FFTContext, z: *mut FFTComplex);
 }
 extern "C" {
-    #[doc = " Do a complex FFT with the parameters defined in av_fft_init(). The\n input data must be permuted before. No 1.0/sqrt(n) normalization is done."]
+    #[doc = " Do a complex FFT with the parameters defined in av_fft_init(). The\n input data must be permuted before. No 1.0/sqrt(n) normalization is done.\n @deprecated use the av_tx_fn value returned by av_tx_init, which also does permutation"]
     pub fn av_fft_calc(s: *mut FFTContext, z: *mut FFTComplex);
 }
 extern "C" {
     pub fn av_fft_end(s: *mut FFTContext);
 }
 extern "C" {
+    #[doc = " @deprecated use av_tx_init from libavutil/tx.h with a type of AV_TX_FLOAT_MDCT,\n with a flag of AV_TX_FULL_IMDCT for a replacement to av_imdct_calc."]
     pub fn av_mdct_init(
         nbits: ::std::os::raw::c_int,
         inverse: ::std::os::raw::c_int,
@@ -18602,7 +18878,7 @@ pub struct RDFTContext {
     _unused: [u8; 0],
 }
 extern "C" {
-    #[doc = " Set up a real FFT.\n @param nbits           log2 of the length of the input array\n @param trans           the type of transform"]
+    #[doc = " Set up a real FFT.\n @param nbits           log2 of the length of the input array\n @param trans           the type of transform\n\n @deprecated use av_tx_init from libavutil/tx.h with a type of AV_TX_FLOAT_RDFT"]
     pub fn av_rdft_init(nbits: ::std::os::raw::c_int, trans: RDFTransformType) -> *mut RDFTContext;
 }
 extern "C" {
@@ -18622,7 +18898,7 @@ pub const DCTTransformType_DCT_I: DCTTransformType = 2;
 pub const DCTTransformType_DST_I: DCTTransformType = 3;
 pub type DCTTransformType = ::std::os::raw::c_uint;
 extern "C" {
-    #[doc = " Set up DCT.\n\n @param nbits           size of the input array:\n                        (1 << nbits)     for DCT-II, DCT-III and DST-I\n                        (1 << nbits) + 1 for DCT-I\n @param type            the type of transform\n\n @note the first element of the input of DST-I is ignored"]
+    #[doc = " Set up DCT.\n\n @param nbits           size of the input array:\n                        (1 << nbits)     for DCT-II, DCT-III and DST-I\n                        (1 << nbits) + 1 for DCT-I\n @param type            the type of transform\n\n @note the first element of the input of DST-I is ignored\n\n @deprecated use av_tx_init from libavutil/tx.h with an appropriate type of AV_TX_FLOAT_DCT"]
     pub fn av_dct_init(nbits: ::std::os::raw::c_int, type_: DCTTransformType) -> *mut DCTContext;
 }
 extern "C" {
@@ -19939,306 +20215,6 @@ extern "C" {
         pairs_sep: ::std::os::raw::c_char,
     ) -> ::std::os::raw::c_int;
 }
-pub type clock_t = __darwin_clock_t;
-pub type time_t = __darwin_time_t;
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct timespec {
-    pub tv_sec: __darwin_time_t,
-    pub tv_nsec: ::std::os::raw::c_long,
-}
-#[test]
-fn bindgen_test_layout_timespec() {
-    const UNINIT: ::std::mem::MaybeUninit<timespec> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<timespec>(),
-        16usize,
-        concat!("Size of: ", stringify!(timespec))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<timespec>(),
-        8usize,
-        concat!("Alignment of ", stringify!(timespec))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tv_sec) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(timespec),
-            "::",
-            stringify!(tv_sec)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tv_nsec) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(timespec),
-            "::",
-            stringify!(tv_nsec)
-        )
-    );
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct tm {
-    pub tm_sec: ::std::os::raw::c_int,
-    pub tm_min: ::std::os::raw::c_int,
-    pub tm_hour: ::std::os::raw::c_int,
-    pub tm_mday: ::std::os::raw::c_int,
-    pub tm_mon: ::std::os::raw::c_int,
-    pub tm_year: ::std::os::raw::c_int,
-    pub tm_wday: ::std::os::raw::c_int,
-    pub tm_yday: ::std::os::raw::c_int,
-    pub tm_isdst: ::std::os::raw::c_int,
-    pub tm_gmtoff: ::std::os::raw::c_long,
-    pub tm_zone: *mut ::std::os::raw::c_char,
-}
-#[test]
-fn bindgen_test_layout_tm() {
-    const UNINIT: ::std::mem::MaybeUninit<tm> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<tm>(),
-        56usize,
-        concat!("Size of: ", stringify!(tm))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<tm>(),
-        8usize,
-        concat!("Alignment of ", stringify!(tm))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tm_sec) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tm),
-            "::",
-            stringify!(tm_sec)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tm_min) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tm),
-            "::",
-            stringify!(tm_min)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tm_hour) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tm),
-            "::",
-            stringify!(tm_hour)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tm_mday) as usize - ptr as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tm),
-            "::",
-            stringify!(tm_mday)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tm_mon) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tm),
-            "::",
-            stringify!(tm_mon)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tm_year) as usize - ptr as usize },
-        20usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tm),
-            "::",
-            stringify!(tm_year)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tm_wday) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tm),
-            "::",
-            stringify!(tm_wday)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tm_yday) as usize - ptr as usize },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tm),
-            "::",
-            stringify!(tm_yday)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tm_isdst) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tm),
-            "::",
-            stringify!(tm_isdst)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tm_gmtoff) as usize - ptr as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tm),
-            "::",
-            stringify!(tm_gmtoff)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).tm_zone) as usize - ptr as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tm),
-            "::",
-            stringify!(tm_zone)
-        )
-    );
-}
-extern "C" {
-    pub static mut tzname: [*mut ::std::os::raw::c_char; 0usize];
-}
-extern "C" {
-    pub static mut getdate_err: ::std::os::raw::c_int;
-}
-extern "C" {
-    pub static mut timezone: ::std::os::raw::c_long;
-}
-extern "C" {
-    pub static mut daylight: ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn asctime(arg1: *const tm) -> *mut ::std::os::raw::c_char;
-}
-extern "C" {
-    pub fn clock() -> clock_t;
-}
-extern "C" {
-    pub fn ctime(arg1: *const time_t) -> *mut ::std::os::raw::c_char;
-}
-extern "C" {
-    pub fn difftime(arg1: time_t, arg2: time_t) -> f64;
-}
-extern "C" {
-    pub fn getdate(arg1: *const ::std::os::raw::c_char) -> *mut tm;
-}
-extern "C" {
-    pub fn gmtime(arg1: *const time_t) -> *mut tm;
-}
-extern "C" {
-    pub fn localtime(arg1: *const time_t) -> *mut tm;
-}
-extern "C" {
-    pub fn mktime(arg1: *mut tm) -> time_t;
-}
-extern "C" {
-    pub fn strftime(
-        arg1: *mut ::std::os::raw::c_char,
-        arg2: usize,
-        arg3: *const ::std::os::raw::c_char,
-        arg4: *const tm,
-    ) -> usize;
-}
-extern "C" {
-    pub fn strptime(
-        arg1: *const ::std::os::raw::c_char,
-        arg2: *const ::std::os::raw::c_char,
-        arg3: *mut tm,
-    ) -> *mut ::std::os::raw::c_char;
-}
-extern "C" {
-    pub fn time(arg1: *mut time_t) -> time_t;
-}
-extern "C" {
-    pub fn tzset();
-}
-extern "C" {
-    pub fn asctime_r(
-        arg1: *const tm,
-        arg2: *mut ::std::os::raw::c_char,
-    ) -> *mut ::std::os::raw::c_char;
-}
-extern "C" {
-    pub fn ctime_r(
-        arg1: *const time_t,
-        arg2: *mut ::std::os::raw::c_char,
-    ) -> *mut ::std::os::raw::c_char;
-}
-extern "C" {
-    pub fn gmtime_r(arg1: *const time_t, arg2: *mut tm) -> *mut tm;
-}
-extern "C" {
-    pub fn localtime_r(arg1: *const time_t, arg2: *mut tm) -> *mut tm;
-}
-extern "C" {
-    pub fn posix2time(arg1: time_t) -> time_t;
-}
-extern "C" {
-    pub fn tzsetwall();
-}
-extern "C" {
-    pub fn time2posix(arg1: time_t) -> time_t;
-}
-extern "C" {
-    pub fn timelocal(arg1: *mut tm) -> time_t;
-}
-extern "C" {
-    pub fn timegm(arg1: *mut tm) -> time_t;
-}
-extern "C" {
-    pub fn nanosleep(__rqtp: *const timespec, __rmtp: *mut timespec) -> ::std::os::raw::c_int;
-}
-pub const clockid_t__CLOCK_REALTIME: clockid_t = 0;
-pub const clockid_t__CLOCK_MONOTONIC: clockid_t = 6;
-pub const clockid_t__CLOCK_MONOTONIC_RAW: clockid_t = 4;
-pub const clockid_t__CLOCK_MONOTONIC_RAW_APPROX: clockid_t = 5;
-pub const clockid_t__CLOCK_UPTIME_RAW: clockid_t = 8;
-pub const clockid_t__CLOCK_UPTIME_RAW_APPROX: clockid_t = 9;
-pub const clockid_t__CLOCK_PROCESS_CPUTIME_ID: clockid_t = 12;
-pub const clockid_t__CLOCK_THREAD_CPUTIME_ID: clockid_t = 16;
-pub type clockid_t = ::std::os::raw::c_uint;
-extern "C" {
-    pub fn clock_getres(__clock_id: clockid_t, __res: *mut timespec) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn clock_gettime(__clock_id: clockid_t, __tp: *mut timespec) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn clock_gettime_nsec_np(__clock_id: clockid_t) -> __uint64_t;
-}
-extern "C" {
-    pub fn clock_settime(__clock_id: clockid_t, __tp: *const timespec) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn timespec_get(ts: *mut timespec, base: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
-}
 #[doc = " Callback for checking whether to abort blocking functions.\n AVERROR_EXIT is returned in this case by the interrupted\n function. During blocking operations, callback is called with\n opaque as parameter. If the callback returns 1, the\n blocking operation will be aborted.\n\n No members can be added to this struct without a major bump, if\n new elements have been added after this struct in AVFormatContext\n or AVIOContext."]
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -20561,7 +20537,6 @@ pub struct AVIOContext {
     pub protocol_whitelist: *const ::std::os::raw::c_char,
     #[doc = " ',' separated list of disallowed protocols."]
     pub protocol_blacklist: *const ::std::os::raw::c_char,
-    #[doc = " A callback that is used instead of write_packet."]
     pub write_data_type: ::std::option::Option<
         unsafe extern "C" fn(
             opaque: *mut ::std::os::raw::c_void,
@@ -21309,7 +21284,7 @@ pub struct AVOutputFormat {
     pub video_codec: AVCodecID,
     #[doc = "< default subtitle codec"]
     pub subtitle_codec: AVCodecID,
-    #[doc = " can use flags: AVFMT_NOFILE, AVFMT_NEEDNUMBER,\n AVFMT_GLOBALHEADER, AVFMT_NOTIMESTAMPS, AVFMT_VARIABLE_FPS,\n AVFMT_NODIMENSIONS, AVFMT_NOSTREAMS, AVFMT_ALLOW_FLUSH,\n AVFMT_TS_NONSTRICT, AVFMT_TS_NEGATIVE"]
+    #[doc = " can use flags: AVFMT_NOFILE, AVFMT_NEEDNUMBER,\n AVFMT_GLOBALHEADER, AVFMT_NOTIMESTAMPS, AVFMT_VARIABLE_FPS,\n AVFMT_NODIMENSIONS, AVFMT_NOSTREAMS,\n AVFMT_TS_NONSTRICT, AVFMT_TS_NEGATIVE"]
     pub flags: ::std::os::raw::c_int,
     #[doc = " List of supported codec_id-codec_tag pairs, ordered by \"better\n choice first\". The arrays are all terminated by AV_CODEC_ID_NONE."]
     pub codec_tag: *const *const AVCodecTag,
@@ -21885,9 +21860,9 @@ pub struct AVStream {
     pub avg_frame_rate: AVRational,
     #[doc = " For streams with AV_DISPOSITION_ATTACHED_PIC disposition, this packet\n will contain the attached picture.\n\n decoding: set by libavformat, must not be modified by the caller.\n encoding: unused"]
     pub attached_pic: AVPacket,
-    #[doc = " An array of side data that applies to the whole stream (i.e. the\n container does not allow it to change between packets).\n\n There may be no overlap between the side data in this array and side data\n in the packets. I.e. a given side data is either exported by the muxer\n (demuxing) / set by the caller (muxing) in this array, then it never\n appears in the packets, or the side data is exported / sent through\n the packets (always in the first packet where the value becomes known or\n changes), then it does not appear in this array.\n\n - demuxing: Set by libavformat when the stream is created.\n - muxing: May be set by the caller before avformat_write_header().\n\n Freed by libavformat in avformat_free_context().\n\n @see av_format_inject_global_side_data()"]
+    #[doc = " An array of side data that applies to the whole stream (i.e. the\n container does not allow it to change between packets).\n\n There may be no overlap between the side data in this array and side data\n in the packets. I.e. a given side data is either exported by the muxer\n (demuxing) / set by the caller (muxing) in this array, then it never\n appears in the packets, or the side data is exported / sent through\n the packets (always in the first packet where the value becomes known or\n changes), then it does not appear in this array.\n\n - demuxing: Set by libavformat when the stream is created.\n - muxing: May be set by the caller before avformat_write_header().\n\n Freed by libavformat in avformat_free_context().\n\n @deprecated use AVStream's @ref AVCodecParameters.coded_side_data\n             \"codecpar side data\"."]
     pub side_data: *mut AVPacketSideData,
-    #[doc = " The number of elements in the AVStream.side_data array."]
+    #[doc = " The number of elements in the AVStream.side_data array.\n\n @deprecated use AVStream's @ref AVCodecParameters.nb_coded_side_data\n             \"codecpar side data\"."]
     pub nb_side_data: ::std::os::raw::c_int,
     #[doc = " Flags indicating events happening on the stream, a combination of\n AVSTREAM_EVENT_FLAG_*.\n\n - demuxing: may be set by the demuxer in avformat_open_input(),\n   avformat_find_stream_info() and av_read_frame(). Flags must be cleared\n   by the user once the event has been handled.\n - muxing: may be set by the user after avformat_write_header(). to\n   indicate a user-triggered event.  The muxer will clear the flags for\n   events it has handled in av_[interleaved]_write_frame()."]
     pub event_flags: ::std::os::raw::c_int,
@@ -23307,7 +23282,7 @@ fn bindgen_test_layout_AVFormatContext() {
     );
 }
 extern "C" {
-    #[doc = " This function will cause global side data to be injected in the next packet\n of each stream as well as after any subsequent seek."]
+    #[doc = " This function will cause global side data to be injected in the next packet\n of each stream as well as after any subsequent seek.\n\n @note global side data is always available in every AVStream's\n       @ref AVCodecParameters.coded_side_data \"codecpar side data\" array, and\n       in a @ref AVCodecContext.coded_side_data \"decoder's side data\" array if\n       initialized with said stream's codecpar.\n @see av_packet_side_data_get()"]
     pub fn av_format_inject_global_side_data(s: *mut AVFormatContext);
 }
 extern "C" {
@@ -23365,7 +23340,7 @@ extern "C" {
     pub fn avformat_new_stream(s: *mut AVFormatContext, c: *const AVCodec) -> *mut AVStream;
 }
 extern "C" {
-    #[doc = " Wrap an existing array as stream side data.\n\n @param st   stream\n @param type side information type\n @param data the side data array. It must be allocated with the av_malloc()\n             family of functions. The ownership of the data is transferred to\n             st.\n @param size side information size\n\n @return zero on success, a negative AVERROR code on failure. On failure,\n         the stream is unchanged and the data remains owned by the caller."]
+    #[doc = " Wrap an existing array as stream side data.\n\n @param st   stream\n @param type side information type\n @param data the side data array. It must be allocated with the av_malloc()\n             family of functions. The ownership of the data is transferred to\n             st.\n @param size side information size\n\n @return zero on success, a negative AVERROR code on failure. On failure,\n         the stream is unchanged and the data remains owned by the caller.\n @deprecated use av_packet_side_data_add() with the stream's\n             @ref AVCodecParameters.coded_side_data \"codecpar side data\""]
     pub fn av_stream_add_side_data(
         st: *mut AVStream,
         type_: AVPacketSideDataType,
@@ -23374,7 +23349,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    #[doc = " Allocate new information from stream.\n\n @param stream stream\n @param type   desired side information type\n @param size   side information size\n\n @return pointer to fresh allocated data or NULL otherwise"]
+    #[doc = " Allocate new information from stream.\n\n @param stream stream\n @param type   desired side information type\n @param size   side information size\n\n @return pointer to fresh allocated data or NULL otherwise\n @deprecated use av_packet_side_data_new() with the stream's\n             @ref AVCodecParameters.coded_side_data \"codecpar side data\""]
     pub fn av_stream_new_side_data(
         stream: *mut AVStream,
         type_: AVPacketSideDataType,
@@ -23382,7 +23357,7 @@ extern "C" {
     ) -> *mut u8;
 }
 extern "C" {
-    #[doc = " Get side information from stream.\n\n @param stream stream\n @param type   desired side information type\n @param size   If supplied, *size will be set to the size of the side data\n               or to zero if the desired side data is not present.\n\n @return pointer to data if present or NULL otherwise"]
+    #[doc = " Get side information from stream.\n\n @param stream stream\n @param type   desired side information type\n @param size   If supplied, *size will be set to the size of the side data\n               or to zero if the desired side data is not present.\n\n @return pointer to data if present or NULL otherwise\n @deprecated use av_packet_side_data_get() with the stream's\n             @ref AVCodecParameters.coded_side_data \"codecpar side data\""]
     pub fn av_stream_get_side_data(
         stream: *const AVStream,
         type_: AVPacketSideDataType,
@@ -24587,7 +24562,7 @@ pub struct AVFilterContext {
     pub var_values: *mut f64,
     #[doc = "< the enabled state from the last expression evaluation"]
     pub is_disabled: ::std::os::raw::c_int,
-    #[doc = " For filters which will create hardware frames, sets the device the\n filter should create them in.  All other filters will ignore this field:\n in particular, a filter which consumes or processes hardware frames will\n instead use the hw_frames_ctx field in AVFilterLink to carry the\n hardware context information."]
+    #[doc = " For filters which will create hardware frames, sets the device the\n filter should create them in.  All other filters will ignore this field:\n in particular, a filter which consumes or processes hardware frames will\n instead use the hw_frames_ctx field in AVFilterLink to carry the\n hardware context information.\n\n May be set by the caller on filters flagged with AVFILTER_FLAG_HWDEVICE\n before initializing the filter with avfilter_init_str() or\n avfilter_init_dict()."]
     pub hw_device_ctx: *mut AVBufferRef,
     #[doc = " Max number of threads allowed in this filter instance.\n If <= 0, its value is ignored.\n Overrides global number of threads set per filter graph."]
     pub nb_threads: ::std::os::raw::c_int,
@@ -26388,23 +26363,23 @@ extern "C" {
     #[doc = " Write data to an AVAudioFifo.\n\n The AVAudioFifo will be reallocated automatically if the available space\n is less than nb_samples.\n\n @see enum AVSampleFormat\n The documentation for AVSampleFormat describes the data layout.\n\n @param af          AVAudioFifo to write to\n @param data        audio data plane pointers\n @param nb_samples  number of samples to write\n @return            number of samples actually written, or negative AVERROR\n                    code on failure. If successful, the number of samples\n                    actually written will always be nb_samples."]
     pub fn av_audio_fifo_write(
         af: *mut AVAudioFifo,
-        data: *mut *mut ::std::os::raw::c_void,
+        data: *const *mut ::std::os::raw::c_void,
         nb_samples: ::std::os::raw::c_int,
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
     #[doc = " Peek data from an AVAudioFifo.\n\n @see enum AVSampleFormat\n The documentation for AVSampleFormat describes the data layout.\n\n @param af          AVAudioFifo to read from\n @param data        audio data plane pointers\n @param nb_samples  number of samples to peek\n @return            number of samples actually peek, or negative AVERROR code\n                    on failure. The number of samples actually peek will not\n                    be greater than nb_samples, and will only be less than\n                    nb_samples if av_audio_fifo_size is less than nb_samples."]
     pub fn av_audio_fifo_peek(
-        af: *mut AVAudioFifo,
-        data: *mut *mut ::std::os::raw::c_void,
+        af: *const AVAudioFifo,
+        data: *const *mut ::std::os::raw::c_void,
         nb_samples: ::std::os::raw::c_int,
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
     #[doc = " Peek data from an AVAudioFifo.\n\n @see enum AVSampleFormat\n The documentation for AVSampleFormat describes the data layout.\n\n @param af          AVAudioFifo to read from\n @param data        audio data plane pointers\n @param nb_samples  number of samples to peek\n @param offset      offset from current read position\n @return            number of samples actually peek, or negative AVERROR code\n                    on failure. The number of samples actually peek will not\n                    be greater than nb_samples, and will only be less than\n                    nb_samples if av_audio_fifo_size is less than nb_samples."]
     pub fn av_audio_fifo_peek_at(
-        af: *mut AVAudioFifo,
-        data: *mut *mut ::std::os::raw::c_void,
+        af: *const AVAudioFifo,
+        data: *const *mut ::std::os::raw::c_void,
         nb_samples: ::std::os::raw::c_int,
         offset: ::std::os::raw::c_int,
     ) -> ::std::os::raw::c_int;
@@ -26413,7 +26388,7 @@ extern "C" {
     #[doc = " Read data from an AVAudioFifo.\n\n @see enum AVSampleFormat\n The documentation for AVSampleFormat describes the data layout.\n\n @param af          AVAudioFifo to read from\n @param data        audio data plane pointers\n @param nb_samples  number of samples to read\n @return            number of samples actually read, or negative AVERROR code\n                    on failure. The number of samples actually read will not\n                    be greater than nb_samples, and will only be less than\n                    nb_samples if av_audio_fifo_size is less than nb_samples."]
     pub fn av_audio_fifo_read(
         af: *mut AVAudioFifo,
-        data: *mut *mut ::std::os::raw::c_void,
+        data: *const *mut ::std::os::raw::c_void,
         nb_samples: ::std::os::raw::c_int,
     ) -> ::std::os::raw::c_int;
 }
@@ -26527,7 +26502,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    #[doc = " Locale-independent strings replace.\n @note This means only ASCII-range characters are replace"]
+    #[doc = " Locale-independent strings replace.\n @note This means only ASCII-range characters are replaced."]
     pub fn av_strireplace(
         str_: *const ::std::os::raw::c_char,
         from: *const ::std::os::raw::c_char,
@@ -26856,7 +26831,7 @@ extern "C" {
     );
 }
 extern "C" {
-    #[doc = " Init a print buffer using a pre-existing buffer.\n\n The buffer will not be reallocated.\n\n @param buf     buffer structure to init\n @param buffer  byte buffer to use for the string data\n @param size    size of buffer"]
+    #[doc = " Init a print buffer using a pre-existing buffer.\n\n The buffer will not be reallocated.\n In case size equals zero, the AVBPrint will be initialized to use\n the internal buffer as if using AV_BPRINT_SIZE_COUNT_ONLY with\n av_bprint_init().\n\n @param buf     buffer structure to init\n @param buffer  byte buffer to use for the string data\n @param size    size of buffer"]
     pub fn av_bprint_init_for_buffer(
         buf: *mut AVBPrint,
         buffer: *mut ::std::os::raw::c_char,
@@ -27337,7 +27312,7 @@ extern "C" {
 extern "C" {
     #[doc = " Read data from a FIFO without modifying FIFO state.\n\n Returns an error if an attempt is made to peek to nonexistent elements\n (i.e. if offset + nb_elems is larger than av_fifo_can_read(f)).\n\n @param f the FIFO buffer\n @param buf Buffer to store the data. nb_elems * av_fifo_elem_size(f) bytes\n            will be written into buf.\n @param nb_elems number of elements to read from FIFO\n @param offset number of initial elements to skip.\n\n @return a non-negative number on success, a negative error code on failure"]
     pub fn av_fifo_peek(
-        f: *mut AVFifo,
+        f: *const AVFifo,
         buf: *mut ::std::os::raw::c_void,
         nb_elems: usize,
         offset: usize,
@@ -27346,7 +27321,7 @@ extern "C" {
 extern "C" {
     #[doc = " Feed data from a FIFO into a user-provided callback.\n\n @param f the FIFO buffer\n @param write_cb Callback the data will be supplied to. May be called\n                 multiple times.\n @param opaque opaque user data to be provided to write_cb\n @param nb_elems Should point to the maximum number of elements that can be\n                 read. Will be updated to contain the total number of elements\n                 actually sent to the callback.\n @param offset number of initial elements to skip; offset + *nb_elems must not\n               be larger than av_fifo_can_read(f).\n\n @return a non-negative number on success, a negative error code on failure"]
     pub fn av_fifo_peek_to_cb(
-        f: *mut AVFifo,
+        f: *const AVFifo,
         write_cb: AVFifoCB,
         opaque: *mut ::std::os::raw::c_void,
         nb_elems: *mut usize,
@@ -28132,9 +28107,9 @@ extern "C" {
 extern "C" {
     #[doc = " Copy image in src_data to dst_data.\n\n @param dst_data      destination image data buffer to copy to\n @param dst_linesizes linesizes for the image in dst_data\n @param src_data      source image data buffer to copy from\n @param src_linesizes linesizes for the image in src_data\n @param pix_fmt       the AVPixelFormat of the image\n @param width         width of the image in pixels\n @param height        height of the image in pixels"]
     pub fn av_image_copy(
-        dst_data: *mut *mut u8,
-        dst_linesizes: *mut ::std::os::raw::c_int,
-        src_data: *mut *const u8,
+        dst_data: *const *mut u8,
+        dst_linesizes: *const ::std::os::raw::c_int,
+        src_data: *const *const u8,
         src_linesizes: *const ::std::os::raw::c_int,
         pix_fmt: AVPixelFormat,
         width: ::std::os::raw::c_int,
@@ -28144,9 +28119,9 @@ extern "C" {
 extern "C" {
     #[doc = " Copy image data located in uncacheable (e.g. GPU mapped) memory. Where\n available, this function will use special functionality for reading from such\n memory, which may result in greatly improved performance compared to plain\n av_image_copy().\n\n The data pointers and the linesizes must be aligned to the maximum required\n by the CPU architecture.\n\n @note The linesize parameters have the type ptrdiff_t here, while they are\n       int for av_image_copy().\n @note On x86, the linesizes currently need to be aligned to the cacheline\n       size (i.e. 64) to get improved performance."]
     pub fn av_image_copy_uc_from(
-        dst_data: *mut *mut u8,
+        dst_data: *const *mut u8,
         dst_linesizes: *const isize,
-        src_data: *mut *const u8,
+        src_data: *const *const u8,
         src_linesizes: *const isize,
         pix_fmt: AVPixelFormat,
         width: ::std::os::raw::c_int,
@@ -28218,7 +28193,7 @@ extern "C" {
 extern "C" {
     #[doc = " Overwrite the image data with black. This is suitable for filling a\n sub-rectangle of an image, meaning the padding between the right most pixel\n and the left most pixel on the next line will not be overwritten. For some\n formats, the image size might be rounded up due to inherent alignment.\n\n If the pixel format has alpha, the alpha is cleared to opaque.\n\n This can return an error if the pixel format is not supported. Normally, all\n non-hwaccel pixel formats should be supported.\n\n Passing NULL for dst_data is allowed. Then the function returns whether the\n operation would have succeeded. (It can return an error if the pix_fmt is\n not supported.)\n\n @param dst_data      data pointers to destination image\n @param dst_linesize  linesizes for the destination image\n @param pix_fmt       the pixel format of the image\n @param range         the color range of the image (important for colorspaces such as YUV)\n @param width         the width of the image in pixels\n @param height        the height of the image in pixels\n @return 0 if the image data was cleared, a negative AVERROR code otherwise"]
     pub fn av_image_fill_black(
-        dst_data: *mut *mut u8,
+        dst_data: *const *mut u8,
         dst_linesize: *const isize,
         pix_fmt: AVPixelFormat,
         range: AVColorRange,
@@ -28487,6 +28462,306 @@ extern "C" {
     #[doc = " Finish hashing and output digest value.\n\n @param[in,out] c    Hash context\n @param[out]    dst  Buffer where output digest value is stored"]
     pub fn av_murmur3_final(c: *mut AVMurMur3, dst: *mut u8);
 }
+pub type clock_t = __darwin_clock_t;
+pub type time_t = __darwin_time_t;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct timespec {
+    pub tv_sec: __darwin_time_t,
+    pub tv_nsec: ::std::os::raw::c_long,
+}
+#[test]
+fn bindgen_test_layout_timespec() {
+    const UNINIT: ::std::mem::MaybeUninit<timespec> = ::std::mem::MaybeUninit::uninit();
+    let ptr = UNINIT.as_ptr();
+    assert_eq!(
+        ::std::mem::size_of::<timespec>(),
+        16usize,
+        concat!("Size of: ", stringify!(timespec))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<timespec>(),
+        8usize,
+        concat!("Alignment of ", stringify!(timespec))
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tv_sec) as usize - ptr as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(timespec),
+            "::",
+            stringify!(tv_sec)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tv_nsec) as usize - ptr as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(timespec),
+            "::",
+            stringify!(tv_nsec)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct tm {
+    pub tm_sec: ::std::os::raw::c_int,
+    pub tm_min: ::std::os::raw::c_int,
+    pub tm_hour: ::std::os::raw::c_int,
+    pub tm_mday: ::std::os::raw::c_int,
+    pub tm_mon: ::std::os::raw::c_int,
+    pub tm_year: ::std::os::raw::c_int,
+    pub tm_wday: ::std::os::raw::c_int,
+    pub tm_yday: ::std::os::raw::c_int,
+    pub tm_isdst: ::std::os::raw::c_int,
+    pub tm_gmtoff: ::std::os::raw::c_long,
+    pub tm_zone: *mut ::std::os::raw::c_char,
+}
+#[test]
+fn bindgen_test_layout_tm() {
+    const UNINIT: ::std::mem::MaybeUninit<tm> = ::std::mem::MaybeUninit::uninit();
+    let ptr = UNINIT.as_ptr();
+    assert_eq!(
+        ::std::mem::size_of::<tm>(),
+        56usize,
+        concat!("Size of: ", stringify!(tm))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<tm>(),
+        8usize,
+        concat!("Alignment of ", stringify!(tm))
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tm_sec) as usize - ptr as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(tm),
+            "::",
+            stringify!(tm_sec)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tm_min) as usize - ptr as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(tm),
+            "::",
+            stringify!(tm_min)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tm_hour) as usize - ptr as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(tm),
+            "::",
+            stringify!(tm_hour)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tm_mday) as usize - ptr as usize },
+        12usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(tm),
+            "::",
+            stringify!(tm_mday)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tm_mon) as usize - ptr as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(tm),
+            "::",
+            stringify!(tm_mon)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tm_year) as usize - ptr as usize },
+        20usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(tm),
+            "::",
+            stringify!(tm_year)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tm_wday) as usize - ptr as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(tm),
+            "::",
+            stringify!(tm_wday)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tm_yday) as usize - ptr as usize },
+        28usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(tm),
+            "::",
+            stringify!(tm_yday)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tm_isdst) as usize - ptr as usize },
+        32usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(tm),
+            "::",
+            stringify!(tm_isdst)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tm_gmtoff) as usize - ptr as usize },
+        40usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(tm),
+            "::",
+            stringify!(tm_gmtoff)
+        )
+    );
+    assert_eq!(
+        unsafe { ::std::ptr::addr_of!((*ptr).tm_zone) as usize - ptr as usize },
+        48usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(tm),
+            "::",
+            stringify!(tm_zone)
+        )
+    );
+}
+extern "C" {
+    pub static mut tzname: [*mut ::std::os::raw::c_char; 0usize];
+}
+extern "C" {
+    pub static mut getdate_err: ::std::os::raw::c_int;
+}
+extern "C" {
+    pub static mut timezone: ::std::os::raw::c_long;
+}
+extern "C" {
+    pub static mut daylight: ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn asctime(arg1: *const tm) -> *mut ::std::os::raw::c_char;
+}
+extern "C" {
+    pub fn clock() -> clock_t;
+}
+extern "C" {
+    pub fn ctime(arg1: *const time_t) -> *mut ::std::os::raw::c_char;
+}
+extern "C" {
+    pub fn difftime(arg1: time_t, arg2: time_t) -> f64;
+}
+extern "C" {
+    pub fn getdate(arg1: *const ::std::os::raw::c_char) -> *mut tm;
+}
+extern "C" {
+    pub fn gmtime(arg1: *const time_t) -> *mut tm;
+}
+extern "C" {
+    pub fn localtime(arg1: *const time_t) -> *mut tm;
+}
+extern "C" {
+    pub fn mktime(arg1: *mut tm) -> time_t;
+}
+extern "C" {
+    pub fn strftime(
+        arg1: *mut ::std::os::raw::c_char,
+        arg2: usize,
+        arg3: *const ::std::os::raw::c_char,
+        arg4: *const tm,
+    ) -> usize;
+}
+extern "C" {
+    pub fn strptime(
+        arg1: *const ::std::os::raw::c_char,
+        arg2: *const ::std::os::raw::c_char,
+        arg3: *mut tm,
+    ) -> *mut ::std::os::raw::c_char;
+}
+extern "C" {
+    pub fn time(arg1: *mut time_t) -> time_t;
+}
+extern "C" {
+    pub fn tzset();
+}
+extern "C" {
+    pub fn asctime_r(
+        arg1: *const tm,
+        arg2: *mut ::std::os::raw::c_char,
+    ) -> *mut ::std::os::raw::c_char;
+}
+extern "C" {
+    pub fn ctime_r(
+        arg1: *const time_t,
+        arg2: *mut ::std::os::raw::c_char,
+    ) -> *mut ::std::os::raw::c_char;
+}
+extern "C" {
+    pub fn gmtime_r(arg1: *const time_t, arg2: *mut tm) -> *mut tm;
+}
+extern "C" {
+    pub fn localtime_r(arg1: *const time_t, arg2: *mut tm) -> *mut tm;
+}
+extern "C" {
+    pub fn posix2time(arg1: time_t) -> time_t;
+}
+extern "C" {
+    pub fn tzsetwall();
+}
+extern "C" {
+    pub fn time2posix(arg1: time_t) -> time_t;
+}
+extern "C" {
+    pub fn timelocal(arg1: *mut tm) -> time_t;
+}
+extern "C" {
+    pub fn timegm(arg1: *mut tm) -> time_t;
+}
+extern "C" {
+    pub fn nanosleep(__rqtp: *const timespec, __rmtp: *mut timespec) -> ::std::os::raw::c_int;
+}
+pub const clockid_t__CLOCK_REALTIME: clockid_t = 0;
+pub const clockid_t__CLOCK_MONOTONIC: clockid_t = 6;
+pub const clockid_t__CLOCK_MONOTONIC_RAW: clockid_t = 4;
+pub const clockid_t__CLOCK_MONOTONIC_RAW_APPROX: clockid_t = 5;
+pub const clockid_t__CLOCK_UPTIME_RAW: clockid_t = 8;
+pub const clockid_t__CLOCK_UPTIME_RAW_APPROX: clockid_t = 9;
+pub const clockid_t__CLOCK_PROCESS_CPUTIME_ID: clockid_t = 12;
+pub const clockid_t__CLOCK_THREAD_CPUTIME_ID: clockid_t = 16;
+pub type clockid_t = ::std::os::raw::c_uint;
+extern "C" {
+    pub fn clock_getres(__clock_id: clockid_t, __res: *mut timespec) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn clock_gettime(__clock_id: clockid_t, __tp: *mut timespec) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn clock_gettime_nsec_np(__clock_id: clockid_t) -> __uint64_t;
+}
+extern "C" {
+    pub fn clock_settime(__clock_id: clockid_t, __tp: *const timespec) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn timespec_get(ts: *mut timespec, base: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
+}
 extern "C" {
     #[doc = " Parse str and store the parsed ratio in q.\n\n Note that a ratio with infinite (1/0) or negative value is\n considered valid, so you should check on the returned value if you\n want to exclude those values.\n\n The undefined value can be expressed using the \"0:0\" string.\n\n @param[in,out] q pointer to the AVRational which will contain the ratio\n @param[in] str the string to parse: it has to be a string in the format\n num:den, a float number or an expression\n @param[in] max the maximum allowed numerator and denominator\n @param[in] log_offset log level offset which is applied to the log\n level of log_ctx\n @param[in] log_ctx parent logging context\n @return >= 0 on success, a negative error code otherwise"]
     pub fn av_parse_ratio(
@@ -28560,6 +28835,10 @@ extern "C" {
 extern "C" {
     #[doc = " Get a seed to use in conjunction with random functions.\n This function tries to provide a good seed at a best effort bases.\n Its possible to call this function multiple times if more bits are needed.\n It can be quite slow, which is why it should only be used as seed for a faster\n PRNG. The quality of the seed depends on the platform."]
     pub fn av_get_random_seed() -> u32;
+}
+extern "C" {
+    #[doc = " Generate cryptographically secure random data, i.e. suitable for use as\n encryption keys and similar.\n\n @param buf buffer into which the random data will be written\n @param len size of buf in bytes\n\n @retval 0                         success, len bytes of random data was written\n                                   into buf\n @retval \"a negative AVERROR code\" random data could not be generated"]
+    pub fn av_random_bytes(buf: *mut u8, len: usize) -> ::std::os::raw::c_int;
 }
 #[doc = " ReplayGain information (see\n http://wiki.hydrogenaudio.org/index.php?title=ReplayGain_1.0_specification).\n The size of this struct is a part of the public ABI."]
 #[repr(C)]
@@ -29688,6 +29967,12 @@ extern "C" {
 }
 pub type __builtin_va_list = *mut ::std::os::raw::c_char;
 pub type __uint128_t = u128;
+#[doc = " Private context used for internal data.\n\n Unlike priv_data, this is not codec-specific. It is used in general\n libavcodec functions."]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct AVCodecInternal {
+    pub _address: u8,
+}
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct URLContext {

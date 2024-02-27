@@ -1,2 +1,4 @@
+/build
+/dependencies
 /target
 Cargo.lock

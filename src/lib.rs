@@ -9,5 +9,5 @@ mod avutil;
 )]
 pub mod ffi {
     pub use crate::avutil::{_avutil::*, common::*, error::*, pixfmt::*, rational::*};
-    include!(concat!(env!("OUT_DIR"), "/binding.rs"));
+    include!("binding.rs");
 }

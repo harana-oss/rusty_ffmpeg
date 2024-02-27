@@ -1,0 +1,9 @@
+[requires]
+ffmpeg/6.1
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout
