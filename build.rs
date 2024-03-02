@@ -172,6 +172,14 @@ fn static_linking(out_dir: &Path, ffmpeg_include_dir: &Path, ffmpeg_libs_dir: &P
         .expect("Cannot write binding to file.");
 }
 
+fn linux_libraries_linking() {
+    println!("cargo:rustc-link-lib=X11");
+    println!("cargo:rustc-link-lib=va");
+    println!("cargo:rustc-link-lib=va-drm");
+    println!("cargo:rustc-link-lib=va-x11");
+    println!("cargo:rustc-link-lib=vdpau");
+}
+
 fn macos_frameworks_linking() {
     println!("cargo:rustc-link-lib=framework=AudioToolbox");
     println!("cargo:rustc-link-lib=framework=AVFoundation");
@@ -182,11 +190,14 @@ fn macos_frameworks_linking() {
 }
   
 fn main() {
+    #[cfg(target_os = "linux")]
+    linux_libraries_linking();
+
     #[cfg(target_os = "macos")]
     macos_frameworks_linking();
 
     let conan_dir = match std::env::var("CONAN_HOME").ok() {
-      None            => home::home_dir().unwrap().join(".conan2"),
+      None                   => home::home_dir().unwrap().join(".conan2"),
       Some(dir)       => PathBuf::from(dir).into()
     };
 
